@@ -387,7 +387,7 @@
           ],
           "keyTopics": [
             "Tipos nativos, compreensões de listas/dicionários, funções e modularização em Python 3",
-            "Manipulação robusta de arquivos (CSV, JSON, Markdown) e codificações de caracteres (UTF-8 vs ISO-8859-1)",
+            "Manipulação segura de arquivos (CSV, JSON, Markdown) e codificações de caracteres (UTF-8 vs ISO-8859-1)",
             "Tratamento de exceções, ambientes virtuais isolados (venv) e linha de comando (argparse)",
             "Fluxo profissional de Git: commits atômicos, branches, merge, rebase e Pull Requests"
           ],

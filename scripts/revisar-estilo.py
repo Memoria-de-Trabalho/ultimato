@@ -46,6 +46,8 @@ CLICHES = [
     "potencializar",
     "alavancar",
     "divisor de águas",
+    "robusto",
+    "robusta",
     "civic tech",
     "civic-tech",
 ]

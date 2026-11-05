@@ -26,6 +26,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Afinidade eletiva.** Expressão que Weber toma de Goethe para designar a atração e o reforço mútuo entre duas formas sociais (uma ética religiosa e uma conduta econômica), sem que uma seja simplesmente causa da outra. *MOD-105, aula 6.*
 
+**Alegoria.** Em Benjamin, forma de expressão em que as coisas aparecem como ruínas e fragmentos carregados de sentido atribuído, em oposição ao símbolo, que sugere uma totalidade harmoniosa. *MOD-203, aula 6.*
+
 ***Aletheia*** (grego). Verdade. Heidegger a lê como "desvelamento": o que sai do encobrimento e aparece. *MOD-101, aula 7.*
 
 **Algoritmo.** Sequência finita e precisa de instruções que transforma entradas em saídas. O nome vem do matemático persa al-Khwarizmi (século IX). *MOD-102, aula 2.*
@@ -40,6 +42,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Anotação de tipo.** Indicação no código do tipo esperado de uma variável, parâmetro ou retorno. Em Python não muda a execução; serve à documentação, aos editores e a verificadores como o mypy. *MOD-202, aula 4.*
 
+**Aparelhos privados de hegemonia.** Em Gramsci, as instituições da sociedade civil (escolas, igrejas, jornais, partidos, sindicatos, associações) pelas quais se organiza o consenso. *MOD-203, aula 2.*
+
 **Apoio mútuo.** Para Kropotkin, a cooperação entre membros de uma espécie, fator de sobrevivência e evolução tão importante quanto a competição. *MOD-107, aula 4.*
 
 **Arquitetura hexagonal (portas e adaptadores).** Estilo proposto por Alistair Cockburn (2005): o domínio e os casos de uso ficam no centro e falam com o mundo só por portas (interfaces); adaptadores ligam as portas às tecnologias. As dependências apontam para dentro. *MOD-202, aula 7.*
@@ -51,6 +55,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **ASCII.** Tabela de 1963 que associa 128 caracteres (letras sem acento, algarismos, pontuação) a números de 0 a 127. *MOD-102, aula 1.*
 
 ***Aufhebung*** (alemão). Palavra central de Hegel, que significa ao mesmo tempo suprimir, conservar e elevar. Traduzida como suprassunção ou superação. *MOD-101, aula 4.*
+
+**Aura.** Em Benjamin, o "aqui e agora" da obra de arte, a sua existência única no lugar em que se encontra, que a reprodução técnica faz declinar. *MOD-203, aula 8.*
 
 **Autogestão.** Organização em que os próprios trabalhadores ou membros de uma comunidade administram coletivamente a produção e a vida comum. *MOD-107, aula 3.*
 
@@ -67,6 +73,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Binário.** Sistema de numeração de base 2, com os algarismos 0 e 1. *MOD-102, aula 1.*
 
 **Bit e byte.** O bit é a menor unidade de informação (0 ou 1); o byte é um grupo de 8 bits, que representa 256 valores. *MOD-102, aula 1.*
+
+**Bloco histórico.** Em Gramsci, a unidade entre estrutura econômica e superestruturas (ideologia, cultura, direito) numa formação social concreta. *MOD-203, aula 3.*
 
 **Bolcheviques e mencheviques.** As duas frações em que se dividiu o Partido Operário Social-Democrata Russo em 1903 (da maioria e da minoria, nomes tirados de uma votação). A divisão se tornou definitiva em 1912. *MOD-201, aula 2.*
 
@@ -112,7 +120,13 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Consciência coletiva.** Em Durkheim, o conjunto das crenças e sentimentos comuns à média dos membros de uma sociedade. *MOD-105, aula 2.*
 
+**Consciência de classe atribuída.** Em Lukács, a consciência que uma classe teria se compreendesse plenamente a sua situação na totalidade social; não coincide com o que os seus membros efetivamente pensam. *MOD-203, aula 5.*
+
+**Conselhos de fábrica.** Órgãos eleitos pelos trabalhadores em cada seção da fábrica, defendidos por Gramsci em *L'Ordine Nuovo* (Turim, 1919 e 1920) como embriões de um Estado operário. *MOD-203, aula 1.*
+
 ***Copyleft***. Uso do direito autoral para garantir que uma obra e todas as suas versões modificadas continuem livres (licença GPL, CC BY-SA). *MOD-106, aula 6.*
+
+**Crise orgânica.** Em Gramsci, crise que atinge ao mesmo tempo a economia e a hegemonia: a classe dirigente perde o consenso e conserva apenas o domínio. *MOD-203, aula 3.*
 
 **Crosta de aço (*stahlhartes Gehäuse*).** Imagem de Weber para a ordem econômica moderna, que se tornou uma estrutura dura que determina a vida de todos, mesmo depois de perder o sentido religioso original. Também traduzida como "jaula de ferro". *MOD-105, aula 6.*
 
@@ -162,6 +176,10 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Equidade (*epieikeia*).** Em Aristóteles, a correção da lei geral no caso particular, comparada à régua flexível de chumbo de Lesbos. *MOD-101, aula 3.*
 
+**Estado integral.** Em Gramsci, o Estado entendido como sociedade política mais sociedade civil: hegemonia revestida de coerção. *MOD-203, aula 2.*
+
+**Estetização da política.** Em Benjamin, a transformação da política em espetáculo estético pelo fascismo, que dá às massas expressão sem lhes dar direitos. A resposta comunista seria a politização da arte. *MOD-203, aula 8.*
+
 **Ética da convicção e ética da responsabilidade.** Em Weber: agir segundo princípios, deixando o resultado ao destino; ou responder pelas consequências previsíveis dos próprios atos. A política madura combina as duas. *MOD-105, aula 7.*
 
 **Eticidade (*Sittlichkeit*).** Em Hegel, a vida ética concreta de uma comunidade, dividida em família, sociedade civil e Estado. *MOD-101, aula 5.*
@@ -178,6 +196,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Falácia ecológica.** Erro de tirar conclusões sobre indivíduos a partir de dados agregados de grupos. *MOD-105, aula 3.*
 
+**Fantasmagoria.** Em Benjamin, o mundo de mercadorias e imagens deslumbrantes do século XIX, que se apresenta como sonho e esconde as relações de produção. *MOD-203, aula 9.*
+
 **Fascismo.** Para Trótski, movimento de massas da pequena burguesia arruinada, apoiado pelo grande capital em momentos de crise, para destruir pela violência as organizações independentes dos trabalhadores. *MOD-201, aula 7.*
 
 **Fato social.** Em Durkheim, maneira de agir, pensar e sentir exterior ao indivíduo, coercitiva e geral. *MOD-105, aula 1.*
@@ -187,6 +207,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Fetichismo da mercadoria.** Em Marx, o fenômeno em que as relações sociais entre produtores aparecem como relações entre coisas (preços, mercadorias, dinheiro) dotadas de poder próprio. A aparência é objetiva. *MOD-103, aula 4.*
 
 **Fila e pilha.** Na fila, o primeiro a entrar é o primeiro a sair; na pilha, o último a entrar é o primeiro a sair. *MOD-102, aula 7.*
+
+**Flâneur.** O passeador ocioso das passagens e bulevares de Paris, figura que Benjamin estuda em Baudelaire como observador da multidão e da mercadoria. *MOD-203, aula 9.*
 
 **Força de trabalho.** A capacidade de trabalhar, que o trabalhador vende ao capitalista. Distinta do trabalho, que é o seu uso. *MOD-103, aula 5.*
 
@@ -202,7 +224,11 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ***Gestell*** (alemão). Armação ou com-posição: em Heidegger, a essência da técnica moderna, que dispõe tudo, a natureza e as pessoas, como recurso. *MOD-101, aula 7.*
 
+**Guerra de movimento e guerra de posição.** Em Gramsci, o ataque frontal ao poder de Estado (movimento) e a luta longa pela hegemonia nas trincheiras da sociedade civil (posição), necessária no Ocidente. *MOD-203, aula 2.*
+
 ## H
+
+**Hegemonia.** Em Gramsci, a direção intelectual e moral pela qual uma classe obtém o consenso ativo das outras, combinada com a coerção. *MOD-203, aula 2.*
 
 **Herança.** Mecanismo em que uma classe filha reaproveita e especializa outra (relação é um). Cria acoplamento forte e hierarquias rígidas. *MOD-202, aula 3.*
 
@@ -216,7 +242,11 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Ideologia.** Em *A Ideologia Alemã*, o conjunto de ideias que apresenta interesses particulares como universais e relações históricas como naturais. "As ideias da classe dominante são as ideias dominantes." *MOD-103, aula 2.*
 
+**Imagem dialética.** Em Benjamin, o encontro súbito entre um momento do passado e o presente, que forma uma constelação e ilumina os dois. *MOD-203, aula 9.*
+
 **Imperialismo.** Em Lênin, a fase do capitalismo em que dominam os monopólios e o capital financeiro, a exportação de capitais ganha importância e o mundo está repartido entre grupos monopolistas e potências. *MOD-201, aula 4.*
+
+**Inconsciente ótico.** Em Benjamin, o que a câmera revela e o olho não vê (o gesto decomposto em câmera lenta, o detalhe ampliado), como a psicanálise revela o inconsciente pulsional. *MOD-203, aula 8.*
 
 **Índice invertido.** Estrutura que associa cada palavra aos documentos em que aparece; coração dos mecanismos de busca. *MOD-102, aula 7.*
 
@@ -224,11 +254,15 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Integração e regulação.** Em Durkheim, as duas dimensões da relação entre indivíduo e sociedade: quanto o indivíduo está ligado ao grupo e quanto as normas orientam os seus desejos. *MOD-105, aula 3.*
 
+**Intelectual orgânico.** Em Gramsci, o intelectual que nasce com uma classe e lhe dá homogeneidade e consciência da sua função, em oposição ao intelectual tradicional, que se apresenta como autônomo. *MOD-203, aula 3.*
+
 **Invariante de laço.** Afirmação verdadeira antes de cada repetição de um laço, usada para raciocinar sobre a correção de um algoritmo. *MOD-102, aula 2.*
 
 **IP e TCP.** O IP dá endereços e leva pacotes entre eles; o TCP garante que cheguem completos e em ordem. *MOD-104, aula 1.*
 
 ## J
+
+**Jetztzeit (tempo de agora).** Nas teses de Benjamin sobre o conceito de história, o tempo saturado de presente que interrompe o tempo homogêneo e vazio do progresso. *MOD-203, aula 9.*
 
 **JSON.** Formato de texto para dados estruturados (objetos, listas, textos, números), padrão das APIs da Web. *MOD-106, aula 4.*
 
@@ -259,6 +293,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 ***Mojibake*** (japonês). Texto embaralhado que aparece quando bytes gravados numa codificação são lidos em outra ("SÃ£o Paulo"). *MOD-102, aula 1.*
 
 **Monopólio da violência legítima.** Definição de Estado de Weber: a comunidade que reivindica com êxito, num território, o monopólio do uso legítimo da força física. *MOD-105, aula 7.*
+
+**Montagem.** Procedimento de construir uma obra justapondo fragmentos heterogêneos sem narrativa contínua, para que o choque entre eles produza sentido. Em Benjamin, também forma de conhecimento. *MOD-203, aula 6.*
 
 **Mutualismo.** Proposta de Proudhon de uma economia de pequenos produtores associados, com crédito mútuo sem juro. *MOD-107, aula 1.*
 
@@ -294,6 +330,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ***Pólis*** (grego). A cidade-Estado grega, comunidade política autônoma. *MOD-101, aula 1.*
 
+**Posição teleológica.** Em Lukács, a estrutura do trabalho humano: pôr previamente na consciência uma finalidade e realizá-la mobilizando as cadeias causais da natureza. *MOD-203, aula 5.*
+
 **Práxis.** Atividade humana prática e transformadora; nas *Teses sobre Feuerbach*, critério da verdade. *MOD-103, aula 2.*
 
 **Proletariado.** A classe dos trabalhadores assalariados que não possuem meios de produção e precisam vender a sua força de trabalho. *MOD-103, aula 3.*
@@ -304,17 +342,27 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **pyproject.toml.** Arquivo padrão que descreve um projeto Python: nome, versão, dependências, build e configuração de ferramentas. *MOD-202, aula 8.*
 
+## Q
+
+**Questão meridional.** Em Gramsci, o problema da aliança entre os operários do Norte da Itália e os camponeses do Sul, e da ideologia que os separava. *MOD-203, aula 1.*
+
 ## R
 
 **Reconhecimento (*Anerkennung*).** Em Hegel, a consciência de si só se realiza no reconhecimento de outra consciência de si; na dialética do senhor e do escravo, o reconhecimento unilateral fracassa. *MOD-101, aula 4.*
 
 **Recursão.** Técnica em que uma função resolve um problema chamando a si mesma para uma versão menor, até um caso base. *MOD-102, aula 4.*
 
+**Refuncionalização (Umfunktionierung).** Termo de Brecht retomado por Benjamin: transformar a função social de um aparelho técnico de produção, em vez de apenas abastecê-lo com conteúdos diferentes. *MOD-203, aula 7.*
+
+**Reificação.** Em Lukács, o processo pelo qual relações entre pessoas assumem o caráter de coisas e propriedades de coisas, estendendo a forma mercadoria a toda a vida social. *MOD-203, aula 4.*
+
 **Representações coletivas.** Em Durkheim, formas de pensar produzidas pela vida em grupo, inclusive as categorias do pensamento (tempo, espaço, classificação). *MOD-105, aula 4.*
 
 **Requisito funcional e não funcional.** O que o sistema faz (funcional) e como deve ser: rápido, seguro, acessível, auditável (não funcional). *MOD-202, aula 1.*
 
 **Retórica.** Arte de convencer pela palavra. No *Górgias*, uma rotina que imita a justiça como a confeitaria imita a medicina. *MOD-101, aula 2.*
+
+**Revolução passiva.** Em Gramsci, transformação conduzida pelo alto, que moderniza a sociedade incorporando parte das demandas populares sem a participação ativa das massas. *MOD-203, aula 3.*
 
 **Revolução permanente.** Tese de Trótski: nos países atrasados, as tarefas democráticas cabem à classe operária no poder, a revolução avança ao socialismo e depende da extensão internacional. *MOD-201, aula 3.*
 
@@ -358,7 +406,11 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Tor.** Rede que faz a conexão passar por três servidores voluntários, para que nenhum saiba ao mesmo tempo quem você é e o que acessa. *MOD-104, aula 5.*
 
+**Totalidade.** Em Lukács, o ponto de vista que compreende cada fato social como momento de um todo histórico em movimento, com as suas mediações. *MOD-203, aula 5.*
+
 **Trabalho concreto e trabalho abstrato.** O concreto é o trabalho na sua forma útil e específica, que produz valor de uso; o abstrato é o gasto de força humana em geral, substância do valor. *MOD-103, aula 4.*
+
+**Transformismo.** Em Gramsci, a absorção gradual das lideranças dos grupos adversários pela classe dirigente, que os decapita sem confronto aberto. *MOD-203, aula 3.*
 
 ## U
 
@@ -366,9 +418,13 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ## V
 
+**Valor de culto e valor de exposição.** Em Benjamin, os dois polos da recepção da obra de arte: a existência ritual, que pode até esconder a obra, e a exibição, que a reprodução técnica amplia. *MOD-203, aula 8.*
+
 **Valor de uso e valor de troca.** A utilidade concreta de uma coisa e a proporção em que ela se troca por outras; o valor de troca é a forma em que aparece o valor. *MOD-103, aula 4.*
 
 **Versionamento semântico.** Convenção MAIOR.MENOR.CORREÇÃO: muda o MAIOR quando a interface pública quebra a compatibilidade, o MENOR com funcionalidade nova compatível, a CORREÇÃO só com consertos. *MOD-202, aula 8.*
+
+**Violência instauradora e violência mantenedora.** Em Benjamin, a violência que funda uma nova ordem jurídica e a que conserva a ordem existente; na polícia, as duas se misturam. *MOD-203, aula 6.*
 
 ## Z
 
