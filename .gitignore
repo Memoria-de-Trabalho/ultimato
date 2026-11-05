@@ -1,0 +1,9 @@
+.claude/launch.json
+.claude/settings.local.json
+.venv/
+__pycache__/
+.DS_Store
+._*
+notas/
+manuais/
+PAUTAS.md
