@@ -461,7 +461,6 @@ def build_viewer_html(encrypted_bundle_json: str, vendor_prefix: str = "vendor/"
     <a href="https://memoria-de-trabalho.github.io/">Memória de Trabalho</a>
     <a href="https://memoria-de-trabalho.github.io/artigos/">Artigos</a>
     <a href="https://memoria-de-trabalho.github.io/artes/">Artes</a>
-    <a href="https://lucasrafaldini.github.io/">lucasrafaldini.github.io</a>
   </nav>
   <main class="wrap">
     <header class="page-head">
@@ -540,7 +539,7 @@ def build_viewer_html(encrypted_bundle_json: str, vendor_prefix: str = "vendor/"
       </section>
     </div>
     <footer>
-      Memória de Trabalho · feito por trabalhadores · <a href="https://memoria-de-trabalho.github.io/">página inicial</a> · <a href="https://lucasrafaldini.github.io/">lucasrafaldini.github.io</a>
+      Memória de Trabalho · feito por trabalhadores · <a href="https://memoria-de-trabalho.github.io/artes/">artes para baixar</a> · <a href="#expediente">expediente</a>
     </footer>
   </main>
   <script id="enc-payload" type="application/json">{encrypted_bundle_json}</script>
