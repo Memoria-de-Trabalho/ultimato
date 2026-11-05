@@ -36,6 +36,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Ambiente virtual.** Pasta isolada com uma cópia do Python e as bibliotecas de um projeto, para que projetos diferentes não briguem por versões. *MOD-106, aula 1.*
 
+**Análise estática.** Exame do código sem executá-lo, por ferramentas como ruff e mypy, que apontam erros prováveis, violações de estilo, tipos incompatíveis e trechos inseguros. *MOD-204, aula 4.*
+
 **Anarquismo.** Corrente do movimento socialista que recusa toda dominação não justificada, em especial o Estado e a propriedade capitalista, e propõe a organização por associações livres e federadas. Do grego *an-arkhé*, ausência de comando. *MOD-107.*
 
 **Anomia.** Em Durkheim, estado de ausência ou enfraquecimento das regras que limitam e orientam os desejos e as relações sociais. Aparece na divisão do trabalho sem regulação e explica o suicídio anômico. *MOD-105, aulas 2 e 3.*
@@ -53,6 +55,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Ascese intramundana.** Disciplina religiosa praticada no mundo, no trabalho e na vida cotidiana, e não no mosteiro. Para os puritanos, o trabalho metódico era dever para com Deus. *MOD-105, aula 6.*
 
 **ASCII.** Tabela de 1963 que associa 128 caracteres (letras sem acento, algarismos, pontuação) a números de 0 a 127. *MOD-102, aula 1.*
+
+**Asserção.** Afirmação, no código, de uma condição que deve ser verdadeira. Em Python, a instrução assert; se a condição for falsa, o teste falha. *MOD-204, aula 2.*
 
 ***Aufhebung*** (alemão). Palavra central de Hegel, que significa ao mesmo tempo suprimir, conservar e elevar. Traduzida como suprassunção ou superação. *MOD-101, aula 4.*
 
@@ -92,6 +96,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ## C
 
+**Cadeia de suprimentos de software.** O conjunto de componentes, ferramentas e pessoas de que um programa depende para ser construído e distribuído: bibliotecas e as suas dependências, repositórios de pacotes, serviços de integração contínua. *MOD-204, aula 6.*
+
 **Capital constante e capital variável.** Em Marx, o capital constante (c) é investido em meios de produção e só transfere o seu valor ao produto; o capital variável (v) é investido em salários e cria um valor maior que o seu. *MOD-103, aula 5.*
 
 **Capital financeiro.** Em Hilferding e Lênin, a fusão entre capital bancário e capital industrial sob o comando de uma oligarquia financeira. *MOD-201, aula 4.*
@@ -103,6 +109,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Cifra simétrica e assimétrica.** Na simétrica (AES), a mesma chave cifra e decifra; na assimétrica (RSA, curvas elípticas), cada pessoa tem um par de chaves, pública e privada, o que resolve a troca de chaves e permite assinaturas. *MOD-104, aula 5.*
 
 **Classe e objeto.** A classe é o molde que define atributos e métodos; o objeto é um exemplar concreto, com os seus próprios valores. *MOD-202, aula 2.*
+
+**Cobertura de código.** Proporção do código (linhas ou ramos de decisão) executada pelo menos uma vez durante os testes. Mostra o que não foi testado, mas não a qualidade do que foi. *MOD-204, aula 4.*
 
 **Coesão.** O quanto as partes de um módulo trabalham para um mesmo propósito. Busca-se alta coesão: cada módulo faz uma coisa. *MOD-202, aula 5.*
 
@@ -118,6 +126,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Comutação de pacotes.** Técnica em que a mensagem é dividida em pacotes que viajam separados pela rede e são remontados no destino. *MOD-104, aula 1.*
 
+**Condição de corrida.** Defeito em que o resultado de um programa depende da ordem ou do tempo relativo de eventos concorrentes. Uma das causas dos acidentes do Therac-25. *MOD-204, aula 1.*
+
 **Consciência coletiva.** Em Durkheim, o conjunto das crenças e sentimentos comuns à média dos membros de uma sociedade. *MOD-105, aula 2.*
 
 **Consciência de classe atribuída.** Em Lukács, a consciência que uma classe teria se compreendesse plenamente a sua situação na totalidade social; não coincide com o que os seus membros efetivamente pensam. *MOD-203, aula 5.*
@@ -125,6 +135,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Conselhos de fábrica.** Órgãos eleitos pelos trabalhadores em cada seção da fábrica, defendidos por Gramsci em *L'Ordine Nuovo* (Turim, 1919 e 1920) como embriões de um Estado operário. *MOD-203, aula 1.*
 
 ***Copyleft***. Uso do direito autoral para garantir que uma obra e todas as suas versões modificadas continuem livres (licença GPL, CC BY-SA). *MOD-106, aula 6.*
+
+**CPF (Cadastro de Pessoas Físicas).** Número de 11 dígitos da Receita Federal; os dois últimos são dígitos verificadores calculados por somas ponderadas, que detectam a maioria, mas não todos, os erros de digitação. *MOD-204, aulas 2 e 4.*
 
 **Crise orgânica.** Em Gramsci, crise que atinge ao mesmo tempo a economia e a hegemonia: a classe dirigente perde o consenso e conserva apenas o domínio. *MOD-203, aula 3.*
 
@@ -159,6 +171,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 ***Doxa*** (grego). Opinião, crença baseada na aparência. Pode ser verdadeira por acaso, mas não sabe dar a razão de si. *MOD-101, aula 1.*
 
 **Dualidade de poderes.** Situação de crise revolucionária em que dois poderes rivais coexistem num país, cada um apoiado numa classe, até que um elimine o outro (Rússia, fevereiro a outubro de 1917). *MOD-201, aula 5.*
+
+**Dublê de teste.** Objeto que substitui, num teste, um componente real (servidor, banco de dados, relógio). Os tipos são dummy, stub, spy, mock e fake. *MOD-204, aula 3.*
 
 **Duck typing.** Em Python, o que importa é se o objeto tem os métodos necessários, e não a sua classe. *MOD-202, aula 3.*
 
@@ -196,6 +210,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Falácia ecológica.** Erro de tirar conclusões sobre indivíduos a partir de dados agregados de grupos. *MOD-105, aula 3.*
 
+**Falha, defeito e erro.** O erro (engano) é a ação humana equivocada; ele deixa no código um defeito (o bug); o defeito, executado em certas condições, produz uma falha, o comportamento errado observado. *MOD-204, aula 1.*
+
 **Fantasmagoria.** Em Benjamin, o mundo de mercadorias e imagens deslumbrantes do século XIX, que se apresenta como sonho e esconde as relações de produção. *MOD-203, aula 9.*
 
 **Fascismo.** Para Trótski, movimento de massas da pequena burguesia arruinada, apoiado pelo grande capital em momentos de crise, para destruir pela violência as organizações independentes dos trabalhadores. *MOD-201, aula 7.*
@@ -208,7 +224,11 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Fila e pilha.** Na fila, o primeiro a entrar é o primeiro a sair; na pilha, o último a entrar é o primeiro a sair. *MOD-102, aula 7.*
 
+**Fixture.** Em pytest, função que prepara algo de que os testes precisam (um objeto, uma pasta temporária, um relógio falso) e é entregue a eles pelo nome do parâmetro. *MOD-204, aula 2.*
+
 **Flâneur.** O passeador ocioso das passagens e bulevares de Paris, figura que Benjamin estuda em Baudelaire como observador da multidão e da mercadoria. *MOD-203, aula 9.*
+
+**Fluxo de trabalho (workflow).** No GitHub Actions, arquivo YAML em .github/workflows que descreve quando rodar (eventos) e o que rodar (jobs e passos) numa máquina virtual. *MOD-204, aula 5.*
 
 **Força de trabalho.** A capacidade de trabalhar, que o trabalhador vende ao capitalista. Distinta do trabalho, que é o seu uso. *MOD-103, aula 5.*
 
@@ -217,6 +237,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Frente única.** Unidade de ação entre organizações operárias de orientações diferentes contra um inimigo comum, mantendo cada uma a sua independência: marchar separados, golpear juntos. *MOD-201, aula 7.*
 
 **Função de dispersão (hash).** Função que transforma uma chave num número de tamanho fixo. Nas tabelas de dispersão, indica a posição; na criptografia (SHA-256), funciona como impressão digital de um arquivo. *MOD-102, aula 7; MOD-104, aula 4.*
+
+**Função de hash criptográfico.** Função (como SHA-256) que transforma qualquer arquivo numa sequência curta, a impressão digital, de modo que qualquer alteração mínima muda completamente o resultado. *MOD-204, aula 5.*
 
 ## G
 
@@ -227,6 +249,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Guerra de movimento e guerra de posição.** Em Gramsci, o ataque frontal ao poder de Estado (movimento) e a luta longa pela hegemonia nas trincheiras da sociedade civil (posição), necessária no Ocidente. *MOD-203, aula 2.*
 
 ## H
+
+**Hash.** Número calculado a partir de um valor por uma função de dispersão, usado para guardar e encontrar elementos rapidamente em dicionários e conjuntos. Em Python, a semente do hash de textos é sorteada a cada execução, o que muda a ordem de percurso dos conjuntos. *MOD-204, aula 3.*
 
 **Hegemonia.** Em Gramsci, a direção intelectual e moral pela qual uma classe obtém o consenso ativo das outras, combinada com a coerção. *MOD-203, aula 2.*
 
@@ -252,6 +276,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Injeção de dependência.** Técnica em que um objeto recebe de fora os objetos de que depende, em vez de criá-los. Permite trocar implementações e testar com objetos falsos. *MOD-202, aula 5.*
 
+**Integração contínua (CI).** Prática de integrar as mudanças de todos ao ramo principal com frequência, com construção e testes automáticos a cada integração. Entrega e implantação contínuas automatizam também a publicação. *MOD-204, aula 5.*
+
 **Integração e regulação.** Em Durkheim, as duas dimensões da relação entre indivíduo e sociedade: quanto o indivíduo está ligado ao grupo e quanto as normas orientam os seus desejos. *MOD-105, aula 3.*
 
 **Intelectual orgânico.** Em Gramsci, o intelectual que nasce com uma classe e lhe dá homogeneidade e consciência da sua função, em oposição ao intelectual tradicional, que se apresenta como autônomo. *MOD-203, aula 3.*
@@ -260,6 +286,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **IP e TCP.** O IP dá endereços e leva pacotes entre eles; o TCP garante que cheguem completos e em ordem. *MOD-104, aula 1.*
 
+**ISO/IEC 25010.** Norma internacional que define a qualidade de produto de software em oito características: adequação funcional, eficiência, compatibilidade, usabilidade, confiabilidade, segurança, manutenibilidade e portabilidade. *MOD-204, aula 1.*
+
 ## J
 
 **Jetztzeit (tempo de agora).** Nas teses de Benjamin sobre o conceito de história, o tempo saturado de presente que interrompe o tempo homogêneo e vazio do progresso. *MOD-203, aula 9.*
@@ -267,6 +295,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **JSON.** Formato de texto para dados estruturados (objetos, listas, textos, números), padrão das APIs da Web. *MOD-106, aula 4.*
 
 ## L
+
+**Lei de Goodhart.** Quando uma medida se torna uma meta, ela deixa de ser uma boa medida. Formulação de Marilyn Strathern para uma observação do economista Charles Goodhart. *MOD-204, aula 4.*
 
 **Licença de software livre.** Documento que garante as liberdades de usar, estudar, modificar e redistribuir um programa (GPL, MIT, Apache). *MOD-106, aula 6.*
 
@@ -285,6 +315,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Metadados.** Dados sobre dados: quem, quando, onde, com que equipamento. Cruzados em massa, revelam tanto quanto o conteúdo. *MOD-104, aula 4.*
 
 **Métodos ágeis.** Processos de desenvolvimento em ciclos curtos, com entregas frequentes e adaptação contínua (Manifesto Ágil, 2001). *MOD-202, aula 1.*
+
+**Mock.** Dublê de teste que, além de responder, registra como foi chamado, para que o teste confira essas interações. *MOD-204, aula 3.*
 
 **Modelo de ameaças.** Análise do que se quer proteger, de quem, com que probabilidade e consequências, e a que custo, para escolher medidas de segurança proporcionais. *MOD-104, aula 5.*
 
@@ -318,11 +350,15 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Par a par (P2P) e rede federada.** Numa rede par a par, os participantes se comunicam diretamente; numa rede federada, servidores independentes se comunicam por um protocolo comum (e-mail, Mastodon). *MOD-107, aula 7.*
 
+**Parametrização.** Recurso que roda a mesma função de teste várias vezes, uma para cada conjunto de entradas e resultado esperado. *MOD-204, aula 2.*
+
 **PBKDF2 (derivação de chave).** Função que transforma uma senha em chave criptográfica de modo propositalmente lento, com sal aleatório. *MOD-104, aula 5.*
 
 ***Phármakon*** (grego). Remédio e veneno ao mesmo tempo. Platão usa a palavra para a escrita; o curso a usa para toda técnica. *MOD-101, aula 2.*
 
 ***Phronesis*** (grego). Prudência ou sabedoria prática: saber deliberar bem sobre o que é bom para a vida humana em situações concretas. Não se reduz a regras. *MOD-101, aula 3.*
+
+**Pirâmide de testes.** Modelo de Mike Cohn que recomenda muitos testes unitários, menos testes de integração e poucos testes de ponta a ponta. *MOD-204, aula 1.*
 
 ***Poiesis* e *praxis*** (grego). Produção (o fim é um produto separado da atividade) e ação (o fim está na própria atividade). *MOD-101, aula 3.*
 
@@ -342,6 +378,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **pyproject.toml.** Arquivo padrão que descreve um projeto Python: nome, versão, dependências, build e configuração de ferramentas. *MOD-202, aula 8.*
 
+**pytest.** A ferramenta de testes mais usada em Python: descobre sozinha os testes, mostra relatórios detalhados das falhas e oferece parametrização e fixtures. *MOD-204, aula 2.*
+
 ## Q
 
 **Questão meridional.** Em Gramsci, o problema da aliança entre os operários do Norte da Itália e os camponeses do Sul, e da ideologia que os separava. *MOD-203, aula 1.*
@@ -354,9 +392,13 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Refuncionalização (Umfunktionierung).** Termo de Brecht retomado por Benjamin: transformar a função social de um aparelho técnico de produção, em vez de apenas abastecê-lo com conteúdos diferentes. *MOD-203, aula 7.*
 
+**Regressão.** Defeito que reaparece, ou funcionalidade que deixa de funcionar, depois de uma mudança no código. Testes automatizados são a principal defesa contra ela. *MOD-204, aula 1.*
+
 **Reificação.** Em Lukács, o processo pelo qual relações entre pessoas assumem o caráter de coisas e propriedades de coisas, estendendo a forma mercadoria a toda a vida social. *MOD-203, aula 4.*
 
 **Representações coletivas.** Em Durkheim, formas de pensar produzidas pela vida em grupo, inclusive as categorias do pensamento (tempo, espaço, classificação). *MOD-105, aula 4.*
+
+**Reprodutibilidade.** Possibilidade de outra pessoa obter o mesmo resultado com os mesmos dados e o mesmo código. Distingue-se da repetibilidade (mesma equipe, mesmo ambiente) e da replicabilidade (dados novos). *MOD-204, aula 5.*
 
 **Requisito funcional e não funcional.** O que o sistema faz (funcional) e como deve ser: rápido, seguro, acessível, auditável (não funcional). *MOD-202, aula 1.*
 
@@ -369,6 +411,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 ## S
 
 **Sagrado e profano.** Em Durkheim, a divisão fundamental de toda religião: o sagrado é separado e protegido por proibições. *MOD-105, aula 4.*
+
+**SBOM (lista de materiais de software).** Inventário legível por máquina de todos os componentes de um programa, com versões, licenças e origem, nos formatos CycloneDX ou SPDX. *MOD-204, aula 6.*
 
 **Ser genérico (*Gattungswesen*).** Em Feuerbach, a essência da espécie humana; em Marx, a atividade livre e consciente de transformar o mundo, que o trabalho estranhado reduz a meio de vida. *MOD-101, aula 6; MOD-103, aula 1.*
 
@@ -384,6 +428,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Soviete.** Conselho de delegados eleitos em fábricas, quartéis e bairros; surgiu em 1905 e foi o órgão de poder da revolução de 1917. *MOD-201, aulas 3 e 5.*
 
+**Stub.** Dublê de teste que devolve respostas prontas, programadas antes, sem lógica própria. *MOD-204, aula 3.*
+
 **Subsunção formal e real.** Na formal, o capital comanda um processo de trabalho que continua tecnicamente igual; na real, o capital transforma o próprio processo técnico, e o saber migra para a máquina e a gerência. *MOD-103, aula 6.*
 
 ## T
@@ -392,6 +438,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Taxa padronizada.** Casos divididos pela população do grupo, multiplicados por uma base fixa (por 100 mil, por exemplo), para comparar grupos de tamanhos diferentes. *MOD-105, aula 3.*
 
+**TDD (desenvolvimento guiado por testes).** Prática de Kent Beck: escrever primeiro um teste que falha (vermelho), depois o código mínimo para passar (verde) e, por fim, melhorar o código mantendo os testes passando (refatorar). *MOD-204, aula 2.*
+
 ***Techne*** (grego). Saber produtivo, voltado a fabricar algo exterior à ação; origem das palavras técnica e tecnologia. *MOD-101, aulas 2 e 3.*
 
 **Tecnocracia.** Governo exercido por especialistas técnicos em nome do conhecimento e da eficiência. *MOD-101, aula 1; MOD-107, aula 2.*
@@ -399,6 +447,14 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Tempo de trabalho socialmente necessário.** O tempo exigido para produzir uma mercadoria nas condições médias de uma sociedade; medida da grandeza do valor. *MOD-103, aula 4.*
 
 **Termidor.** Mês do calendário revolucionário francês em que Robespierre caiu (1794). Para Trótski, a reação conservadora dentro da revolução, sem volta ao antigo regime. *MOD-201, aula 8.*
+
+**Teste de contrato.** Teste que verifica se a comunicação entre dois sistemas obedece ao formato combinado, por exemplo se uma API continua devolvendo os campos e tipos esperados. *MOD-204, aulas 1 e 3.*
+
+**Teste de mutação.** Técnica que introduz pequenas alterações artificiais no código (mutantes) e confere se a suíte percebe cada uma; mutantes que sobrevivem revelam testes fracos. *MOD-204, aula 4.*
+
+**Teste de propriedade.** Teste que afirma uma regra válida para qualquer entrada e deixa uma ferramenta, como o Hypothesis, gerar entradas para tentar refutá-la. *MOD-204, aula 4.*
+
+**Teste intermitente.** Teste que às vezes passa e às vezes falha sem que o código tenha mudado, por depender de tempo, rede, ordem de execução ou acaso (flaky, em inglês). *MOD-204, aula 3.*
 
 **Tipo ideal.** Em Weber, construção conceitual que acentua de propósito certos traços de um fenômeno; serve de régua para comparar casos reais. *MOD-105, aula 5.*
 
@@ -422,9 +478,17 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Valor de uso e valor de troca.** A utilidade concreta de uma coisa e a proporção em que ela se troca por outras; o valor de troca é a forma em que aparece o valor. *MOD-103, aula 4.*
 
+**Verificação e validação.** Verificação pergunta se o produto foi construído corretamente, segundo a especificação; validação pergunta se o produto certo foi construído. *MOD-204, aula 1.*
+
 **Versionamento semântico.** Convenção MAIOR.MENOR.CORREÇÃO: muda o MAIOR quando a interface pública quebra a compatibilidade, o MENOR com funcionalidade nova compatível, a CORREÇÃO só com consertos. *MOD-202, aula 8.*
 
 **Violência instauradora e violência mantenedora.** Em Benjamin, a violência que funda uma nova ordem jurídica e a que conserva a ordem existente; na polícia, as duas se misturam. *MOD-203, aula 6.*
+
+**Vulnerabilidade (CVE).** Falha que permite atacar um sistema. O catálogo CVE dá a cada vulnerabilidade conhecida um identificador único, como CVE-2021-44228. *MOD-204, aula 6.*
+
+## Y
+
+**YAML.** Formato de texto para dados estruturados que usa a indentação para indicar a hierarquia, muito usado em arquivos de configuração. *MOD-204, aula 5.*
 
 ## Z
 

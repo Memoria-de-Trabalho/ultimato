@@ -65,6 +65,9 @@ Cada linha abaixo informa o arquivo, o autor ou a origem e a licença. As licen�
 | *Um Jantar Brasileiro*, de Debret | [A Brazilian family in Rio de Janeiro](https://commons.wikimedia.org/wiki/File:A_Brazilian_family_in_Rio_de_Janeiro_by_Jean-Baptiste_Debret_1839.jpg) | Jean-Baptiste Debret, litografia de *Viagem Pitoresca e Histórica ao Brasil* | Domínio público |
 | Lei Áurea | [Lei Áurea.jpg](https://commons.wikimedia.org/wiki/File:Lei_%C3%81urea.jpg) | Documento de 13 de maio de 1888, Arquivo Nacional | Domínio público |
 | Margaret Hamilton e o código da Apollo | [Margaret Hamilton, restauração](https://commons.wikimedia.org/wiki/File:Margaret_Hamilton_-_restoration.jpg) | Laboratório Draper do MIT (1969) | Domínio público segundo a Commons |
+| Grace Hopper | [Commodore Grace M. Hopper, USN (covered).jpg](https://commons.wikimedia.org/wiki/File:Commodore_Grace_M._Hopper,_USN_(covered).jpg) | James S. Davis, Marinha dos Estados Unidos (1984) | Domínio público |
+| Fragmento do voo 501 do Ariane 5 | [Ariane 501 Fragment.jpg](https://commons.wikimedia.org/wiki/File:Ariane_501_Fragment.jpg) | Deadpan, Wikimedia Commons | Domínio público por doação do autor |
+| Urna eletrônica brasileira | [Brazilian DRE voting machine for 2022 elections.jpg](https://commons.wikimedia.org/wiki/File:Brazilian_DRE_voting_machine_for_2022_elections.jpg) | Tribunal Superior Eleitoral (2021), via Flickr | Domínio público (marca de domínio público do autor) |
 | Mapa do cólera de John Snow | [Snow-cholera-map-1.jpg](https://commons.wikimedia.org/wiki/File:Snow-cholera-map-1.jpg) | John Snow (1854) | Domínio público |
 | Exposição de W. E. B. Du Bois em Paris | [American Negro Exhibit, Paris, 1900](https://commons.wikimedia.org/wiki/File:American_Negro_Exhibit_at_the_Exposition_Universelle,_Paris,_1900.jpg) | W. E. B. Du Bois e equipe (1900) | Domínio público |
 
