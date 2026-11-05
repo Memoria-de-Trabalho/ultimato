@@ -8,7 +8,7 @@ language: "pt-BR"
 
 # Glossário do curso
 
-Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip nas aulas. Cada verbete traz uma definição mais completa que a do tooltip e indica onde o termo é estudado. O glossário cresce junto com o curso: hoje cobre o Ciclo 1 inteiro.
+Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip nas aulas. Cada verbete traz uma definição mais completa que a do tooltip e indica onde o termo é estudado. O glossário cresce junto com o curso: hoje cobre o Ciclo 1 e os módulos já escritos do Ciclo 2.
 
 **Como ler as referências:** "MOD-103, aula 4" quer dizer módulo MOD-103, aula 4. Os termos em outras línguas aparecem em itálico, com a língua de origem.
 
@@ -60,13 +60,15 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Bit e byte.** O bit é a menor unidade de informação (0 ou 1); o byte é um grupo de 8 bits, que representa 256 valores. *MOD-102, aula 1.*
 
+**Bolcheviques e mencheviques.** As duas frações em que se dividiu o Partido Operário Social-Democrata Russo em 1903 (da maioria e da minoria, nomes tirados de uma votação). A divisão se tornou definitiva em 1912. *MOD-201, aula 2.*
+
 **Bonapartismo.** Forma de governo em que o Executivo se autonomiza das classes em luta e se apresenta como árbitro acima delas, apoiado no exército, na burocracia e em massas pouco organizadas. *MOD-103, aula 3.*
 
 **Burguesia.** Em Marx, a classe proprietária dos meios de produção modernos, que vive do trabalho assalariado de outros. *MOD-103, aula 3.*
 
-**Burocracia.** Em Weber, a administração da dominação racional-legal: competências fixas, hierarquia, documentos escritos, especialização, carreira, regras gerais e impessoalidade. Tecnicamente superior e politicamente perigosa. *MOD-105, aula 7.*
-
 **Burocracia vermelha.** Expressão de Bakunin para a nova classe dirigente que surgiria de um Estado governado em nome dos trabalhadores. *MOD-107, aula 3.*
+
+**Burocracia.** Em Weber, a administração da dominação racional-legal: competências fixas, hierarquia, documentos escritos, especialização, carreira, regras gerais e impessoalidade. Tecnicamente superior e politicamente perigosa. *MOD-105, aula 7.*
 
 **Busca binária.** Em lista ordenada, compara o alvo com o elemento do meio e descarta a metade onde ele não pode estar: O(log n). *MOD-102, aula 4.*
 
@@ -75,6 +77,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 ## C
 
 **Capital constante e capital variável.** Em Marx, o capital constante (c) é investido em meios de produção e só transfere o seu valor ao produto; o capital variável (v) é investido em salários e cria um valor maior que o seu. *MOD-103, aula 5.*
+
+**Capital financeiro.** Em Hilferding e Lênin, a fusão entre capital bancário e capital industrial sob o comando de uma oligarquia financeira. *MOD-201, aula 4.*
 
 **Carisma (dominação carismática).** Obediência baseada na devoção a qualidades extraordinárias atribuídas a uma pessoa. Instável, tende a se rotinizar em tradição ou regra. *MOD-105, aula 7.*
 
@@ -87,6 +91,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Complexidade (notação O).** Forma de descrever como o custo de um algoritmo cresce com o tamanho da entrada, ignorando constantes: O(1), O(log n), O(n), O(n log n), O(n²). *MOD-102, aula 6.*
 
 **Composição orgânica do capital.** A proporção c/v entre capital constante e variável. Tende a subir com a mecanização. *MOD-103, aulas 5 e 7.*
+
+**Comunismo de guerra.** Política econômica soviética de 1918 a 1921: nacionalização ampla, requisição forçada dos cereais e proibição do comércio privado. *MOD-201, aula 6.*
 
 **Comunismo libertário.** Proposta de Kropotkin de uma sociedade sem Estado nem propriedade privada dos meios de produção, com distribuição segundo as necessidades. *MOD-107, aula 5.*
 
@@ -110,9 +116,13 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Desencantamento do mundo.** Em Weber, a eliminação progressiva da magia como meio de salvação e de controle do mundo, substituída pelo cálculo racional. *MOD-105, aula 6.*
 
+**Desenvolvimento desigual e combinado.** Tese de Trótski: os países que chegam tarde ao capitalismo mundial saltam etapas, importam a técnica mais moderna e a combinam com formas arcaicas. *MOD-201, aula 3.*
+
 **Dialética.** Em Platão, o método de perguntas e respostas que examina as hipóteses até um princípio. Em Hegel, o movimento pelo qual uma realidade produz a sua contradição e a supera numa forma mais rica (não a fórmula escolar "tese, antítese, síntese"). *MOD-101, aulas 1 e 4.*
 
 **Dicionário (*dict*).** Coleção de pares chave e valor com busca rápida pela chave; em Python, implementado como tabela de dispersão. *MOD-102, aula 7; MOD-106, aula 2.*
+
+**Diferenciação do campesinato.** Em Lênin, a divisão da massa camponesa em burguesia rural, que contrata trabalho, e proletariado rural, que vende trabalho. *MOD-201, aula 1.*
 
 **DNS.** Sistema hierárquico e distribuído que traduz nomes de domínio em endereços IP. *MOD-104, aula 1.*
 
@@ -120,7 +130,11 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ***Doxa*** (grego). Opinião, crença baseada na aparência. Pode ser verdadeira por acaso, mas não sabe dar a razão de si. *MOD-101, aula 1.*
 
+**Dualidade de poderes.** Situação de crise revolucionária em que dois poderes rivais coexistem num país, cada um apoiado numa classe, até que um elimine o outro (Rússia, fevereiro a outubro de 1917). *MOD-201, aula 5.*
+
 ## E
+
+**Economicismo.** Corrente do movimento operário russo por volta de 1900 que limitava a ação operária às lutas econômicas; alvo de *Que Fazer?*. *MOD-201, aula 2.*
 
 **Efervescência coletiva.** Em Durkheim, o estado de intensa excitação emocional que surge quando um grupo se reúne em rituais; é nesses momentos que a sociedade cria o sagrado. *MOD-105, aula 4.*
 
@@ -130,9 +144,9 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Equidade (*epieikeia*).** Em Aristóteles, a correção da lei geral no caso particular, comparada à régua flexível de chumbo de Lesbos. *MOD-101, aula 3.*
 
-**Eticidade (*Sittlichkeit*).** Em Hegel, a vida ética concreta de uma comunidade, dividida em família, sociedade civil e Estado. *MOD-101, aula 5.*
-
 **Ética da convicção e ética da responsabilidade.** Em Weber: agir segundo princípios, deixando o resultado ao destino; ou responder pelas consequências previsíveis dos próprios atos. A política madura combina as duas. *MOD-105, aula 7.*
+
+**Eticidade (*Sittlichkeit*).** Em Hegel, a vida ética concreta de uma comunidade, dividida em família, sociedade civil e Estado. *MOD-101, aula 5.*
 
 **Exceção.** Em programação, sinal de erro que interrompe o fluxo normal; pode ser capturada com `try` e `except`. *MOD-106, aula 3.*
 
@@ -146,6 +160,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Falácia ecológica.** Erro de tirar conclusões sobre indivíduos a partir de dados agregados de grupos. *MOD-105, aula 3.*
 
+**Fascismo.** Para Trótski, movimento de massas da pequena burguesia arruinada, apoiado pelo grande capital em momentos de crise, para destruir pela violência as organizações independentes dos trabalhadores. *MOD-201, aula 7.*
+
 **Fato social.** Em Durkheim, maneira de agir, pensar e sentir exterior ao indivíduo, coercitiva e geral. *MOD-105, aula 1.*
 
 **Federalismo (no sentido anarquista).** Organização de baixo para cima por associações autônomas federadas livremente, com delegados revogáveis e mandato imperativo. *MOD-107, aulas 1 e 3.*
@@ -158,6 +174,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Forças produtivas e relações de produção.** As forças produtivas são os meios de produção e a capacidade de trabalho; as relações de produção são as relações entre as pessoas na produção, sobretudo de propriedade. *MOD-103, aula 2.*
 
+**Frente única.** Unidade de ação entre organizações operárias de orientações diferentes contra um inimigo comum, mantendo cada uma a sua independência: marchar separados, golpear juntos. *MOD-201, aula 7.*
+
 **Função de dispersão (hash).** Função que transforma uma chave num número de tamanho fixo. Nas tabelas de dispersão, indica a posição; na criptografia (SHA-256), funciona como impressão digital de um arquivo. *MOD-102, aula 7; MOD-104, aula 4.*
 
 ## G
@@ -168,6 +186,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ## H
 
+**Herfindahl-Hirschman (índice).** Soma dos quadrados das participações de mercado, em porcentagem: de perto de zero a 10.000. Mede a concentração de um mercado; uma fusão de empresas com participações a e b o aumenta em 2ab. *MOD-201, aula 4.*
+
 **HTTP e HTTPS.** HTTP é o protocolo de texto da Web (requisição e resposta); HTTPS é o HTTP dentro de um túnel cifrado pelo TLS. *MOD-104, aula 2.*
 
 ## I
@@ -175,6 +195,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Ideia (Forma).** Em Platão, o modelo perfeito, eterno e imutável de cada coisa, que só a razão alcança. *MOD-101, aula 1.*
 
 **Ideologia.** Em *A Ideologia Alemã*, o conjunto de ideias que apresenta interesses particulares como universais e relações históricas como naturais. "As ideias da classe dominante são as ideias dominantes." *MOD-103, aula 2.*
+
+**Imperialismo.** Em Lênin, a fase do capitalismo em que dominam os monopólios e o capital financeiro, a exportação de capitais ganha importância e o mundo está repartido entre grupos monopolistas e potências. *MOD-201, aula 4.*
 
 **Índice invertido.** Estrutura que associa cada palavra aos documentos em que aparece; coração dos mecanismos de busca. *MOD-102, aula 7.*
 
@@ -218,6 +240,10 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ## N
 
+**Narodniki (populistas).** Revolucionários russos do século XIX que apostavam numa passagem direta ao socialismo apoiada na comuna camponesa. *MOD-201, aula 1.*
+
+**NEP (Nova Política Econômica).** Política soviética adotada em 1921: imposto em espécie no lugar da requisição, mercado camponês e pequena empresa privada, com o Estado nos postos de comando. *MOD-201, aula 6.*
+
 **Neutralidade axiológica.** Princípio de Weber: os valores escolhem o tema de pesquisa, mas não podem decidir o resultado; separar juízos de fato e de valor. *MOD-105, aula 5.*
 
 ## O
@@ -256,6 +282,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Retórica.** Arte de convencer pela palavra. No *Górgias*, uma rotina que imita a justiça como a confeitaria imita a medicina. *MOD-101, aula 2.*
 
+**Revolução permanente.** Tese de Trótski: nos países atrasados, as tarefas democráticas cabem à classe operária no poder, a revolução avança ao socialismo e depende da extensão internacional. *MOD-201, aula 3.*
+
 ## S
 
 **Sagrado e profano.** Em Durkheim, a divisão fundamental de toda religião: o sagrado é separado e protegido por proibições. *MOD-105, aula 4.*
@@ -272,6 +300,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Solidariedade mecânica e orgânica.** Em Durkheim, a coesão pela semelhança (mecânica, com direito repressivo) e pela interdependência de funções diferentes (orgânica, com direito restitutivo). *MOD-105, aula 2.*
 
+**Soviete.** Conselho de delegados eleitos em fábricas, quartéis e bairros; surgiu em 1905 e foi o órgão de poder da revolução de 1917. *MOD-201, aulas 3 e 5.*
+
 **Subsunção formal e real.** Na formal, o capital comanda um processo de trabalho que continua tecnicamente igual; na real, o capital transforma o próprio processo técnico, e o saber migra para a máquina e a gerência. *MOD-103, aula 6.*
 
 ## T
@@ -285,6 +315,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Tecnocracia.** Governo exercido por especialistas técnicos em nome do conhecimento e da eficiência. *MOD-101, aula 1; MOD-107, aula 2.*
 
 **Tempo de trabalho socialmente necessário.** O tempo exigido para produzir uma mercadoria nas condições médias de uma sociedade; medida da grandeza do valor. *MOD-103, aula 4.*
+
+**Termidor.** Mês do calendário revolucionário francês em que Robespierre caiu (1794). Para Trótski, a reação conservadora dentro da revolução, sem volta ao antigo regime. *MOD-201, aula 8.*
 
 **Tipo ideal.** Em Weber, construção conceitual que acentua de propósito certos traços de um fenômeno; serve de régua para comparar casos reais. *MOD-105, aula 5.*
 
@@ -303,5 +335,7 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Valor de uso e valor de troca.** A utilidade concreta de uma coisa e a proporção em que ela se troca por outras; o valor de troca é a forma em que aparece o valor. *MOD-103, aula 4.*
 
 ## Z
+
+**Zemstvo.** Assembleia local criada na Rússia em 1864, cujos levantamentos estatísticos sobre os camponeses Lênin reorganizou para estudar a diferenciação de classes. *MOD-201, aula 1.*
 
 ***Zoon politikon*** (grego). Animal político: para Aristóteles, o ser humano só realiza a sua natureza vivendo na *pólis*. *MOD-101, aula 3.*

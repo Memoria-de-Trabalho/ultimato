@@ -118,7 +118,8 @@ def minify_html(content: str) -> str:
 
 def collect_and_minify_repo() -> dict:
     included_exts = {".json", ".md", ".py"}
-    skip_dirs = {".git", "dist", "viewer", "__pycache__", ".venv"}
+    # "assets" guarda o cofre cifrado do build anterior: não deve entrar no novo pacote nem em dist/minified.
+    skip_dirs = {".git", "dist", "viewer", "assets", "vendor", "__pycache__", ".venv"}
     minified_files: dict[str, str] = {}
 
     DIST_MIN_DIR.mkdir(parents=True, exist_ok=True)
@@ -153,6 +154,18 @@ def collect_and_minify_repo() -> dict:
         "curriculum": curriculum_data,
         "repoFiles": minified_files,
     }
+
+
+# Formatos de credenciais que a varredura de segredos do GitHub reconhece e que uma sequência
+# aleatória em base64 pode imitar por acaso.
+PARECE_CREDENCIAL = re.compile(
+    r"AKID[0-9A-Za-z]{32}"          # Tencent Cloud
+    r"|AKIA[0-9A-Z]{16}"            # AWS
+    r"|ASIA[0-9A-Z]{16}"            # AWS (temporária)
+    r"|gh[pousr]_[0-9A-Za-z]{36}"   # GitHub
+    r"|AIza[0-9A-Za-z_\-]{35}"      # Google
+    r"|xox[abpr]-[0-9A-Za-z-]{10,}" # Slack
+)
 
 
 def encrypt_with_key(plaintext_bytes: bytes, key_password: str, iterations: int = 250_000) -> dict:
@@ -958,8 +971,16 @@ def main() -> None:
         payload_dict, separators=(",", ":"), ensure_ascii=False
     ).encode("utf-8")
 
-    encrypted_bundle = encrypt_with_key(minified_payload_bytes, args.key)
-    encrypted_bundle_str = json.dumps(encrypted_bundle, separators=(",", ":"), ensure_ascii=False)
+    # O texto cifrado é aleatório e, raramente, contém por acaso uma sequência com o formato de uma
+    # credencial (por exemplo AKID seguido de 32 caracteres), o que faz o GitHub bloquear o push.
+    # Nesse caso ciframos de novo, com outro sal e outro vetor: o conteúdo decifrado é o mesmo.
+    for _tentativa in range(50):
+        encrypted_bundle = encrypt_with_key(minified_payload_bytes, args.key)
+        encrypted_bundle_str = json.dumps(encrypted_bundle, separators=(",", ":"), ensure_ascii=False)
+        if not PARECE_CREDENCIAL.search(encrypted_bundle_str):
+            break
+    else:
+        raise SystemExit("o texto cifrado continuou parecendo uma credencial depois de 50 tentativas")
 
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)
     (ASSETS_DIR / "curriculum.enc.json").write_text(encrypted_bundle_str, encoding="utf-8")

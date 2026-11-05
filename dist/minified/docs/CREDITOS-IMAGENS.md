@@ -45,6 +45,28 @@ Cada linha abaixo informa o arquivo, o autor ou a origem e a licença. As licen�
 | Mapa lógico da ARPANET | [Arpanet logical map, march 1977.png](https://commons.wikimedia.org/wiki/File:Arpanet_logical_map,_march_1977.png) | Computer History Museum (1977) | Domínio público |
 | Linus Torvalds | [LinuxCon Europe Linus Torvalds 03 (cropped).jpg](https://commons.wikimedia.org/wiki/File:LinuxCon_Europe_Linus_Torvalds_03_(cropped).jpg) | Krd (2014), LinuxCon Europe | CC BY-SA 3.0 |
 
+## Ciclo 2
+
+| Assunto | Arquivo na Commons | Autor ou origem | Licença |
+| :--- | :--- | :--- | :--- |
+| Vladimir Lênin | [Vladimir Lenin.jpg](https://commons.wikimedia.org/wiki/File:Vladimir_Lenin.jpg) | Pavel Zhukov, julho de 1920 | Domínio público |
+| Leon Trótski | [Leon trotsky.jpg](https://commons.wikimedia.org/wiki/File:Leon_trotsky.jpg) | Publicada na revista *Asia* em março de 1918 | Domínio público nos Estados Unidos |
+| Jornadas de Julho em Petrogrado | [19170704 Riot on Nevsky prosp Petrograd.jpg](https://commons.wikimedia.org/wiki/File:19170704_Riot_on_Nevsky_prosp_Petrograd.jpg) | Viktor Bulla, 4 (17) de julho de 1917 | Domínio público |
+| Antonio Gramsci | [Gramsci 1922.jpg](https://commons.wikimedia.org/wiki/File:Gramsci_1922.jpg) | Autor desconhecido (1922) | Domínio público |
+| György Lukács | [Lukacs Gyorgy-hungarian-soviet.jpg](https://commons.wikimedia.org/wiki/File:Lukacs_Gyorgy-hungarian-soviet.jpg) | Autor desconhecido (1919) | Domínio público |
+| *Angelus Novus*, de Paul Klee | [Paul Klee, Angelus Novus, 1920](https://commons.wikimedia.org/wiki/File:Paul_Klee_~_Angelus_Novus_~_1920.jpg) | Paul Klee (1920), Museu de Israel | Domínio público |
+| José Ortega y Gasset | [Retrato por Joaquín Sorolla](https://commons.wikimedia.org/wiki/File:Joaqu%C3%ADn_Sorolla_y_Bastida_-_Jos%C3%A9_Ortega_y_Gasset_-_A1939_-_Hispanic_Society_of_America.jpg) | Joaquín Sorolla (1918), Hispanic Society of America | Domínio público |
+| Ezra Pound | [Ezra Pound por Alvin Langdon Coburn](https://commons.wikimedia.org/wiki/File:Ezra_Pound_by_Alvin_Langdon_Coburn,_1913,_collotype_photograph,_from_the_National_Portrait_Gallery_-_NPG-NPG_78_14Pound-000001.jpg) | Alvin Langdon Coburn (1913), National Portrait Gallery | CC0 |
+| Plano do Panóptico | [Panopticon.jpg](https://commons.wikimedia.org/wiki/File:Panopticon.jpg) | Jeremy Bentham, *Works*, vol. IV (1843, original de 1791) | Domínio público |
+| Jürgen Habermas | [JuergenHabermas.jpg](https://commons.wikimedia.org/wiki/File:JuergenHabermas.jpg) | Wolfram Huke (2008) | CC BY-SA 3.0 |
+| Frantz Fanon | [Fotografia da sobrecapa de *Black Skin, White Masks*](https://commons.wikimedia.org/wiki/File:Photograph_of_Frantz_Fanon_from_Black_Skin_White_Masks_(1967)_dust_jacket.webp) | Autor desconhecido (1967) | Domínio público nos Estados Unidos |
+| Sérgio Buarque de Holanda | [Sérgio Buarque de Holanda (1957)](https://commons.wikimedia.org/wiki/File:S%C3%A9rgio_Buarque_de_Holanda_(1957).tif) | Fundo Correio da Manhã, Arquivo Nacional | Domínio público |
+| *Um Jantar Brasileiro*, de Debret | [A Brazilian family in Rio de Janeiro](https://commons.wikimedia.org/wiki/File:A_Brazilian_family_in_Rio_de_Janeiro_by_Jean-Baptiste_Debret_1839.jpg) | Jean-Baptiste Debret, litografia de *Viagem Pitoresca e Histórica ao Brasil* | Domínio público |
+| Lei Áurea | [Lei Áurea.jpg](https://commons.wikimedia.org/wiki/File:Lei_%C3%81urea.jpg) | Documento de 13 de maio de 1888, Arquivo Nacional | Domínio público |
+| Margaret Hamilton e o código da Apollo | [Margaret Hamilton, restauração](https://commons.wikimedia.org/wiki/File:Margaret_Hamilton_-_restoration.jpg) | Laboratório Draper do MIT (1969) | Domínio público segundo a Commons |
+| Mapa do cólera de John Snow | [Snow-cholera-map-1.jpg](https://commons.wikimedia.org/wiki/File:Snow-cholera-map-1.jpg) | John Snow (1854) | Domínio público |
+| Exposição de W. E. B. Du Bois em Paris | [American Negro Exhibit, Paris, 1900](https://commons.wikimedia.org/wiki/File:American_Negro_Exhibit_at_the_Exposition_Universelle,_Paris,_1900.jpg) | W. E. B. Du Bois e equipe (1900) | Domínio público |
+
 ## Sobre retratos que não entraram
 
-Alguns autores estudados no curso não têm retrato em domínio público ou sob licença livre confirmada na Commons (Martin Heidegger, por exemplo). Nesses casos a aula usa diagramas ou imagens de época em vez de fotografias do autor. Não publicamos fotos de licença duvidosa.
+Alguns autores estudados no curso não têm retrato em domínio público ou sob licença livre confirmada na Commons (Martin Heidegger, Michel Foucault e Florestan Fernandes, por exemplo). Nesses casos a aula usa diagramas ou imagens de época em vez de fotografias do autor. Não publicamos fotos de licença duvidosa.
