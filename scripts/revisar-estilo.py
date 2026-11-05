@@ -17,6 +17,8 @@ CURRICULUM_JSON = ROOT_DIR / "data" / "curriculum.json"
 
 TRAVESSAO = re.compile(r"[\u2014\u2013]")
 HIFEN_SOLTO = re.compile(r"[\wÀ-ú,] - [\wÀ-ú]")
+# Exclamação na prosa. Ignora a sintaxe de imagem do Markdown (`![`), o `!=` e comentários HTML (`<!--`).
+EXCLAMACAO = re.compile(r"!(?![\[=-])")
 EMOJI = re.compile(
     "["
     "\U0001F300-\U0001FAFF"
@@ -52,14 +54,29 @@ CLICHES = [
 def revisar_arquivo(caminho: Path) -> list[tuple[int, str]]:
     erros: list[tuple[int, str]] = []
     texto = caminho.read_text(encoding="utf-8")
+    em_codigo = False
     for n, linha in enumerate(texto.splitlines(), 1):
         if "<!-- estilo: ok -->" in linha:
             continue
+        # Blocos de código (``` ... ```) seguem a sintaxe da linguagem: lá `meio - 1` é subtração.
+        # Neles só checamos emojis e travessões; o resto das regras vale para a prosa.
+        if caminho.suffix == ".md" and linha.lstrip().startswith("```"):
+            em_codigo = not em_codigo
+            continue
         sem_url = re.sub(r"\]\([^)]*\)|https?://\S+", "]", linha)
+        if em_codigo:
+            if TRAVESSAO.search(sem_url):
+                erros.append((n, "travessão ou meia-risca"))
+            if EMOJI.search(sem_url):
+                erros.append((n, "emoji encontrado"))
+            continue
+        sem_url = re.sub(r"`[^`]*`", "``", sem_url)
         if TRAVESSAO.search(sem_url):
             erros.append((n, "travessão ou meia-risca"))
         if HIFEN_SOLTO.search(sem_url):
             erros.append((n, "hífen solto usado como travessão"))
+        if EXCLAMACAO.search(sem_url):
+            erros.append((n, "exclamação no texto"))
         if EMOJI.search(sem_url):
             erros.append((n, "emoji encontrado"))
         for padrao in FORMULA:

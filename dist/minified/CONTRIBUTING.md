@@ -2,7 +2,7 @@
 
 > **Aviso de Idioma:** Este currículo e todos os seus recursos de apoio foram estruturados exclusivamente em **Português (PT-BR)**.
 
-Obrigado pelo interesse em contribuir com **O Último Curso**! Nossa governança curricular inspira-se nas boas práticas da **Open Source Society University (OSSU)** e da **Universidade Livre (UBL)**.
+Obrigado pelo interesse em contribuir com **O Último Curso**. Nossa governança curricular inspira-se nas boas práticas da **Open Source Society University (OSSU)** e da **Universidade Livre (UBL)**.
 
 ## 1. Critérios Rigorosos de Curadoria
 Qualquer sugestão de novo curso, livro, artigo ou ferramenta deve obedecer obrigatoriamente aos **4 Pilares do Currículo**:

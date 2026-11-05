@@ -154,7 +154,7 @@ def encrypt_with_key(plaintext_bytes: bytes, key_password: str, iterations: int 
     }
 
 
-def build_viewer_html(encrypted_bundle_json: str) -> str:
+def build_viewer_html(encrypted_bundle_json: str, vendor_prefix: str = "vendor/") -> str:
     html_template = f"""<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -398,8 +398,95 @@ def build_viewer_html(encrypted_bundle_json: str) -> str:
       color: var(--suave);
     }}
 
+    /* Leitor de aulas */
+    .leitor {{
+      display: grid;
+      grid-template-columns: 300px minmax(0, 1fr);
+      gap: 20px;
+      align-items: start;
+    }}
+    .sumario {{
+      border: 3px solid var(--tinta);
+      background: #fff8;
+      max-height: 80vh;
+      overflow-y: auto;
+      position: sticky;
+      top: 12px;
+    }}
+    .sumario details {{ border-bottom: 1px solid var(--linha); }}
+    .sumario summary {{
+      cursor: pointer;
+      padding: 10px 12px;
+      font: .9rem "Special Elite", "Courier New", monospace;
+      list-style-position: inside;
+    }}
+    .sumario summary b {{ color: var(--vermelho); font-weight: 400; }}
+    .sumario ul {{ list-style: none; margin: 0; padding: 0 0 8px; }}
+    .sumario .btn-arq {{ padding: 6px 12px 6px 26px; font-size: .84rem; }}
+    .sumario .ciclo-rotulo {{
+      font-family: Anton, Impact, sans-serif;
+      text-transform: uppercase;
+      background: var(--tinta);
+      color: var(--amarelo);
+      padding: 6px 12px;
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 400;
+    }}
+    .aula {{
+      border: 3px solid var(--tinta);
+      background: #fffc;
+      padding: clamp(16px, 4vw, 40px);
+      min-width: 0;
+      overflow-wrap: break-word;
+    }}
+    .aula h1 {{ font-size: clamp(2rem, 5vw, 3rem); margin: .2em 0 .5em; }}
+    .aula h2 {{ font-size: clamp(1.5rem, 3.5vw, 2.1rem); margin: 1.6em 0 .5em; border-top: 2px solid var(--tinta); padding-top: .6em; }}
+    .aula h3 {{ font-size: 1.3rem; margin: 1.4em 0 .4em; }}
+    .aula h4 {{ font-family: "Special Elite", monospace; color: var(--vermelho); margin: 1.2em 0 .3em; }}
+    .aula p, .aula li {{ max-width: 76ch; }}
+    .aula blockquote {{
+      margin: 1.2em 0;
+      padding: 10px 18px;
+      border-left: 6px solid var(--vermelho);
+      background: #f2ebdd99;
+    }}
+    .aula img {{ max-width: 100%; height: auto; border: 3px solid var(--tinta); background: #fff; display: block; margin: 1em auto .3em; }}
+    .aula img + em, .aula p > em:only-child {{ display: block; text-align: center; color: var(--suave); font-size: .88rem; }}
+    .aula table {{ border-collapse: collapse; width: 100%; margin: 1em 0; display: block; overflow-x: auto; font-size: .92rem; }}
+    .aula th, .aula td {{ border: 2px solid var(--tinta); padding: 6px 10px; text-align: left; vertical-align: top; }}
+    .aula th {{ background: var(--tinta); color: var(--amarelo); font-weight: 600; }}
+    .aula code {{ background: #14141412; padding: 1px 5px; font-size: .9em; }}
+    .aula pre {{ background: var(--tinta); color: var(--papel); padding: 14px 16px; overflow-x: auto; font-size: .86rem; line-height: 1.5; }}
+    .aula pre code {{ background: transparent; padding: 0; }}
+    .aula details {{ border: 2px dashed var(--tinta); padding: 8px 14px; margin: 1em 0; background: #fff8; }}
+    .aula summary {{ cursor: pointer; font-weight: 600; }}
+    .aula .mermaid {{ background: #fff; border: 3px solid var(--tinta); padding: 12px; margin: 1.2em 0; overflow-x: auto; text-align: center; }}
+    .aula .mermaid svg {{ max-width: 100%; height: auto; }}
+    .aula abbr[title] {{
+      text-decoration: underline dotted var(--vermelho);
+      text-underline-offset: 3px;
+      cursor: help;
+      position: relative;
+    }}
+    .dica {{
+      position: absolute;
+      z-index: 30;
+      max-width: min(340px, 86vw);
+      background: var(--tinta);
+      color: var(--papel);
+      padding: 10px 12px;
+      font: .86rem/1.45 Inter, system-ui, sans-serif;
+      border-left: 5px solid var(--amarelo);
+      box-shadow: 4px 4px 0 var(--vermelho);
+      pointer-events: none;
+    }}
+    .navegacao-aula {{ display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; margin-top: 32px; }}
+
     @media (max-width: 720px) {{
       .explorador {{ grid-template-columns: 1fr; }}
+      .leitor {{ grid-template-columns: 1fr; }}
+      .sumario {{ position: static; max-height: 50vh; }}
     }}
   </style>
 </head>
@@ -453,7 +540,16 @@ def build_viewer_html(encrypted_bundle_json: str) -> str:
         <h2>Escolha o modo</h2>
         <div class="plataformas">
           <button type="button" class="botao ativo" id="tab-curr">Matriz Curricular (20 Módulos)</button>
+          <button type="button" class="botao" id="tab-aulas">Aulas e Ementas</button>
           <button type="button" class="botao" id="tab-files">Arquivos do Repositório Minificado</button>
+        </div>
+
+        <div id="view-aulas" style="display:none">
+          <p class="kicker" style="margin-bottom:10px">Passe o mouse ou toque nos termos sublinhados para ver a explicação</p>
+          <div class="leitor">
+            <nav class="sumario" id="a-list" aria-label="Sumário das aulas"></nav>
+            <article class="aula" id="a-content"></article>
+          </div>
         </div>
 
         <div id="view-curr">
@@ -554,6 +650,7 @@ def build_viewer_html(encrypted_bundle_json: str) -> str:
                       <span class="rotulo">Projeto prático avaliativo</span>
                       <b>${{m.capstoneProject.title}}:</b> ${{m.capstoneProject.description}}
                       <div class="fontes-mod">Base gratuita: ${{resLinks}}</div>
+                      <button type="button" class="botao" data-abrir="${{m.markdownPath}}" style="margin-top:12px">Abrir aulas do módulo</button>
                     </div>
                   </li>
                 `;
@@ -572,21 +669,227 @@ def build_viewer_html(encrypted_bundle_json: str) -> str:
       }}
       fList.innerHTML = fKeys.map(k => `<li><button type="button" class="btn-arq" data-k="${{k}}">${{k}}</button></li>`).join("");
       fList.querySelectorAll(".btn-arq").forEach(btn => btn.onclick = () => selectFile(btn.dataset.k));
-      if (fKeys.length) selectFile(fKeys[0]);
+      if (fKeys.length && !fCont.textContent) selectFile(fKeys[0]);
+
+      document.querySelectorAll("[data-abrir]").forEach(b => b.onclick = () => {{
+        mostrarAba("aulas");
+        abrirDoc(b.dataset.abrir);
+      }});
     }}
 
-    document.getElementById("tab-curr").onclick = () => {{
-      document.getElementById("tab-curr").classList.add("ativo");
-      document.getElementById("tab-files").classList.remove("ativo");
-      document.getElementById("view-curr").style.display = "block";
-      document.getElementById("view-files").style.display = "none";
+    /* Abas */
+    function mostrarAba(id) {{
+      ["curr", "aulas", "files"].forEach(t => {{
+        document.getElementById("tab-" + t).classList.toggle("ativo", t === id);
+        document.getElementById("view-" + t).style.display = t === id ? "block" : "none";
+      }});
+    }}
+    document.getElementById("tab-curr").onclick = () => mostrarAba("curr");
+    document.getElementById("tab-files").onclick = () => mostrarAba("files");
+    document.getElementById("tab-aulas").onclick = () => {{
+      mostrarAba("aulas");
+      if (!document.getElementById("a-content").innerHTML) abrirDoc(ORDEM[0]);
     }};
-    document.getElementById("tab-files").onclick = () => {{
-      document.getElementById("tab-files").classList.add("ativo");
-      document.getElementById("tab-curr").classList.remove("ativo");
-      document.getElementById("view-files").style.display = "block";
-      document.getElementById("view-curr").style.display = "none";
-    }};
+
+    /* Leitor de aulas: Markdown, Mermaid e tooltips de glossário */
+    const VENDOR = "{vendor_prefix}";
+    let PAYLOAD = null;
+    let ORDEM = [];
+    let RENDER = 0;
+    let libs = null;
+
+    function carregarScript(src) {{
+      return new Promise((ok, falha) => {{
+        const s = document.createElement("script");
+        s.src = src;
+        s.onload = ok;
+        s.onerror = falha;
+        document.head.appendChild(s);
+      }});
+    }}
+    function carregarBibliotecas() {{
+      if (!libs) {{
+        libs = Promise.all([
+          carregarScript(VENDOR + "marked.min.js"),
+          carregarScript(VENDOR + "purify.min.js"),
+          carregarScript(VENDOR + "mermaid.min.js")
+        ]).then(() => {{
+          mermaid.initialize({{
+            startOnLoad: false,
+            securityLevel: "strict",
+            theme: "base",
+            themeVariables: {{
+              primaryColor: "#FFE600",
+              primaryTextColor: "#141414",
+              primaryBorderColor: "#141414",
+              lineColor: "#C8102E",
+              secondaryColor: "#F2EBDD",
+              tertiaryColor: "#FFFFFF",
+              fontFamily: "Inter, system-ui, sans-serif"
+            }}
+          }});
+        }});
+      }}
+      return libs;
+    }}
+
+    function separarCabecalho(texto) {{
+      const m = texto.match(/^---\\n([\\s\\S]*?)\\n---\\n?/);
+      const meta = {{}};
+      if (!m) return {{ meta, corpo: texto }};
+      m[1].split("\\n").forEach(l => {{
+        const k = l.match(/^(\\w+):\\s*"?(.*?)"?\\s*$/);
+        if (k) meta[k[1]] = k[2];
+      }});
+      return {{ meta, corpo: texto.slice(m[0].length) }};
+    }}
+    const esc = s => String(s).replace(/[&<>"]/g, c => ({{ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }})[c]);
+    function tituloDoc(k) {{
+      const {{ meta, corpo }} = separarCabecalho(PAYLOAD.repoFiles[k]);
+      if (meta.titulo) return meta.titulo;
+      const h = corpo.match(/^#\\s+(.+)$/m);
+      return h ? h[1].replace(/[*_`]/g, "") : k;
+    }}
+    function resolverCaminho(base, rel) {{
+      const partes = base.split("/");
+      partes.pop();
+      rel.split("/").forEach(seg => {{
+        if (seg === "..") partes.pop();
+        else if (seg && seg !== ".") partes.push(seg);
+      }});
+      return partes.join("/");
+    }}
+    const ancora = t => t.toLowerCase().replace(/[^\\p{{L}}\\p{{N}}\\s-]/gu, "").trim().replace(/\\s/g, "-");
+
+    function montarSumario() {{
+      const d = PAYLOAD.curriculum;
+      const files = PAYLOAD.repoFiles;
+      const chaves = Object.keys(files);
+      const item = (k, rotulo) => `<li><button type="button" class="btn-arq" data-doc="${{esc(k)}}">${{esc(rotulo || tituloDoc(k))}}</button></li>`;
+      const geral = ["README.md", "docs/COMO-ESTUDAR.md", "docs/GLOSSARIO.md", "docs/LINHA-DO-TEMPO.md", "docs/CREDITOS-IMAGENS.md"].filter(k => files[k] != null);
+      ORDEM = [...geral];
+      let html = `<p class="ciclo-rotulo">Comece aqui</p><ul>${{geral.map(k => item(k)).join("")}}</ul>`;
+      d.cycles.forEach(c => {{
+        html += `<p class="ciclo-rotulo">Ciclo ${{c.order}}</p>`;
+        c.modules.forEach(m => {{
+          const pasta = m.markdownPath.replace(/[^/]+$/, "") + m.code.toLowerCase() + "/";
+          const aulas = chaves.filter(k => k.startsWith(pasta) && k.endsWith(".md")).sort();
+          ORDEM.push(m.markdownPath, ...aulas);
+          html += `<details data-mod="${{esc(m.markdownPath)}}"><summary><b>${{esc(m.code)}}</b> ${{esc(m.title)}} <small>(${{aulas.length === 1 ? "1 aula" : aulas.length + " aulas"}})</small></summary><ul>${{item(m.markdownPath, "Guia do módulo")}}${{aulas.map(k => item(k)).join("")}}</ul></details>`;
+        }});
+      }});
+      const nav = document.getElementById("a-list");
+      nav.innerHTML = html;
+      nav.querySelectorAll("[data-doc]").forEach(b => b.onclick = () => abrirDoc(b.dataset.doc));
+    }}
+
+    async function abrirDoc(caminho) {{
+      const files = PAYLOAD.repoFiles;
+      if (files[caminho] == null) return;
+      const art = document.getElementById("a-content");
+      const pedido = ++RENDER;
+      art.innerHTML = "<p>Carregando aula...</p>";
+      try {{
+        await carregarBibliotecas();
+      }} catch (_) {{
+        art.innerHTML = "<p>Não foi possível carregar o leitor. Confira a conexão e recarregue a página.</p>";
+        return;
+      }}
+      const {{ corpo }} = separarCabecalho(files[caminho]);
+      const html = marked.parse(corpo, {{ gfm: true }});
+      art.innerHTML = DOMPurify.sanitize(html, {{ ADD_TAGS: ["abbr"], ADD_ATTR: ["title", "target"] }});
+
+      art.querySelectorAll("pre > code.language-mermaid").forEach(code => {{
+        const div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = code.textContent;
+        code.parentElement.replaceWith(div);
+      }});
+      art.querySelectorAll("h1, h2, h3, h4").forEach(h => h.id = ancora(h.textContent));
+      art.querySelectorAll("img").forEach(img => {{
+        img.loading = "lazy";
+        img.decoding = "async";
+        img.referrerPolicy = "no-referrer";
+      }});
+      art.querySelectorAll("abbr[title]").forEach(a => {{
+        a.dataset.dica = a.title;
+        a.removeAttribute("title");
+        a.tabIndex = 0;
+        a.setAttribute("aria-label", a.textContent + ": " + a.dataset.dica);
+      }});
+      art.querySelectorAll("a[href]").forEach(a => {{
+        const href = a.getAttribute("href");
+        if (/^(https?:|mailto:)/.test(href)) {{
+          a.target = "_blank";
+          a.rel = "noopener";
+          return;
+        }}
+        const [p, frag] = href.split("#");
+        const alvo = p ? resolverCaminho(caminho, decodeURIComponent(p)) : caminho;
+        a.onclick = e => {{
+          e.preventDefault();
+          if (alvo !== caminho && files[alvo] != null) abrirDoc(alvo).then(() => frag && irPara(frag));
+          else if (frag) irPara(frag);
+        }};
+      }});
+      try {{
+        await mermaid.run({{ nodes: art.querySelectorAll(".mermaid") }});
+      }} catch (erro) {{
+        if (pedido === RENDER) console.error(erro);
+      }}
+      if (pedido !== RENDER) return;
+
+      const i = ORDEM.indexOf(caminho);
+      const ant = ORDEM[i - 1];
+      const prox = ORDEM[i + 1];
+      const navAula = document.createElement("nav");
+      navAula.className = "navegacao-aula";
+      navAula.innerHTML = (ant ? `<button type="button" class="botao" data-doc="${{esc(ant)}}">Anterior: ${{esc(tituloDoc(ant))}}</button>` : "<span></span>") +
+        (prox ? `<button type="button" class="botao" data-doc="${{esc(prox)}}">Próxima: ${{esc(tituloDoc(prox))}}</button>` : "");
+      navAula.querySelectorAll("[data-doc]").forEach(b => b.onclick = () => abrirDoc(b.dataset.doc));
+      art.appendChild(navAula);
+
+      document.querySelectorAll("#a-list .btn-arq").forEach(b => b.classList.toggle("ativo", b.dataset.doc === caminho));
+      document.querySelectorAll("#a-list details").forEach(det => {{
+        if (det.querySelector(`[data-doc="${{CSS.escape(caminho)}}"]`)) det.open = true;
+      }});
+      history.replaceState(null, "", "#aula=" + encodeURIComponent(caminho));
+      art.scrollIntoView({{ block: "start" }});
+    }}
+    function irPara(frag) {{
+      const alvo = document.getElementById(decodeURIComponent(frag));
+      if (alvo) alvo.scrollIntoView({{ block: "start" }});
+    }}
+
+    /* Tooltip acessível: mouse, teclado e toque */
+    const dica = document.createElement("div");
+    dica.className = "dica";
+    dica.hidden = true;
+    dica.setAttribute("role", "tooltip");
+    document.body.appendChild(dica);
+    function mostrarDica(el) {{
+      dica.textContent = el.dataset.dica;
+      dica.hidden = false;
+      const r = el.getBoundingClientRect();
+      const largura = dica.offsetWidth;
+      const maxEsq = window.scrollX + document.documentElement.clientWidth - largura - 8;
+      dica.style.left = Math.max(8, Math.min(r.left + window.scrollX, maxEsq)) + "px";
+      dica.style.top = (r.bottom + window.scrollY + 6) + "px";
+    }}
+    const esconderDica = () => {{ dica.hidden = true; }};
+    document.addEventListener("mouseover", e => {{
+      const a = e.target.closest && e.target.closest("abbr[data-dica]");
+      if (a) mostrarDica(a);
+    }});
+    document.addEventListener("mouseout", e => {{
+      if (e.target.closest && e.target.closest("abbr[data-dica]")) esconderDica();
+    }});
+    document.addEventListener("focusin", e => {{
+      const a = e.target.closest && e.target.closest("abbr[data-dica]");
+      if (a) mostrarDica(a);
+    }});
+    document.addEventListener("focusout", esconderDica);
+    document.addEventListener("keydown", e => {{ if (e.key === "Escape") esconderDica(); }});
 
     document.getElementById("f-login").onsubmit = async e => {{
       e.preventDefault();
@@ -597,7 +900,14 @@ def build_viewer_html(encrypted_bundle_json: str) -> str:
         const payload = await unlock(bundle, document.getElementById("pwd").value);
         document.getElementById("auth-sec").style.display = "none";
         document.getElementById("app").style.display = "block";
+        PAYLOAD = payload;
         renderApp(payload);
+        montarSumario();
+        const pedido = decodeURIComponent((location.hash.match(/^#aula=(.+)$/) || [])[1] || "");
+        if (pedido && payload.repoFiles[pedido] != null) {{
+          mostrarAba("aulas");
+          abrirDoc(pedido);
+        }}
       }} catch (_) {{
         err.style.display = "block";
       }}
@@ -636,9 +946,9 @@ def main() -> None:
     root_assets.mkdir(parents=True, exist_ok=True)
     (root_assets / "curriculum.enc.json").write_text(encrypted_bundle_str, encoding="utf-8")
 
-    viewer_min_html = build_viewer_html(encrypted_bundle_str)
-    (VIEWER_DIR / "index.html").write_text(viewer_min_html, encoding="utf-8")
-    (ROOT_DIR / "index.html").write_text(viewer_min_html, encoding="utf-8")
+    # O leitor de aulas carrega marked, DOMPurify e Mermaid de vendor/ (cópias locais, sem CDN externa).
+    (VIEWER_DIR / "index.html").write_text(build_viewer_html(encrypted_bundle_str, "../vendor/"), encoding="utf-8")
+    (ROOT_DIR / "index.html").write_text(build_viewer_html(encrypted_bundle_str, "vendor/"), encoding="utf-8")
 
     redirect_path = VIEWER_DIR / "redirect-lucasrafaldini.html"
     if redirect_path.exists():
