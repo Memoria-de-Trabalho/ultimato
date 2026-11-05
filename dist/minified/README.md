@@ -28,7 +28,7 @@ Comece por [Como estudar neste curso](./docs/COMO-ESTUDAR.md) e pela [Linha do t
 | Ciclo | Módulos | Aulas escritas | Situação |
 | :--- | :---: | :---: | :--- |
 | Ciclo 1: Fundamentos | 7 | 46 | Guias e aulas completos, com tooltips, diagramas, imagens, exercícios e código testado |
-| Ciclo 2: Teoria Revolucionária, Teoria Crítica, Brasil e Engenharia de Software | 7 | 8 | MOD-201 completo; demais módulos em produção |
+| Ciclo 2: Teoria Revolucionária, Teoria Crítica, Brasil e Engenharia de Software | 7 | 16 | MOD-201 e MOD-202 completos; demais módulos em produção |
 | Ciclo 3: Ciências Sociais Computacionais | 6 | 0 | Ementas publicadas; aulas em produção |
 
 ## Propósito

@@ -18,7 +18,11 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Ação social.** Em Weber, toda ação a que o agente atribui um sentido e que, por esse sentido, se orienta pelo comportamento de outros. Weber distingue quatro tipos: racional com relação a fins, racional com relação a valores, afetiva e tradicional. *MOD-105, aula 5.*
 
+**Acoplamento.** O quanto um módulo depende de outros. Busca-se baixo acoplamento, sobre interfaces estáveis, para que mudanças não se espalhem. *MOD-202, aula 5.*
+
 **Acumulação primitiva.** Processo histórico, violento, que separou os produtores dos meios de produção e concentrou riqueza em poucas mãos, criando as condições do capitalismo: cercamentos, legislação contra os despossuídos, colonização e escravidão. No Brasil, a Lei de Terras de 1850 é um exemplo. *MOD-103, aula 7.*
+
+**ADR (registro de decisão de arquitetura).** Documento curto, versionado no repositório, que registra uma decisão de arquitetura, o contexto, as alternativas e as consequências. *MOD-202, aula 7.*
 
 **Afinidade eletiva.** Expressão que Weber toma de Goethe para designar a atração e o reforço mútuo entre duas formas sociais (uma ética religiosa e uma conduta econômica), sem que uma seja simplesmente causa da outra. *MOD-105, aula 6.*
 
@@ -34,7 +38,11 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Anomia.** Em Durkheim, estado de ausência ou enfraquecimento das regras que limitam e orientam os desejos e as relações sociais. Aparece na divisão do trabalho sem regulação e explica o suicídio anômico. *MOD-105, aulas 2 e 3.*
 
+**Anotação de tipo.** Indicação no código do tipo esperado de uma variável, parâmetro ou retorno. Em Python não muda a execução; serve à documentação, aos editores e a verificadores como o mypy. *MOD-202, aula 4.*
+
 **Apoio mútuo.** Para Kropotkin, a cooperação entre membros de uma espécie, fator de sobrevivência e evolução tão importante quanto a competição. *MOD-107, aula 4.*
+
+**Arquitetura hexagonal (portas e adaptadores).** Estilo proposto por Alistair Cockburn (2005): o domínio e os casos de uso ficam no centro e falam com o mundo só por portas (interfaces); adaptadores ligam as portas às tecnologias. As dependências apontam para dentro. *MOD-202, aula 7.*
 
 **Arranjo (*array*).** Sequência de elementos do mesmo tamanho guardados lado a lado na memória, com acesso direto a qualquer posição pelo índice. *MOD-102, aula 3.*
 
@@ -86,6 +94,10 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Cifra simétrica e assimétrica.** Na simétrica (AES), a mesma chave cifra e decifra; na assimétrica (RSA, curvas elípticas), cada pessoa tem um par de chaves, pública e privada, o que resolve a troca de chaves e permite assinaturas. *MOD-104, aula 5.*
 
+**Classe e objeto.** A classe é o molde que define atributos e métodos; o objeto é um exemplar concreto, com os seus próprios valores. *MOD-202, aula 2.*
+
+**Coesão.** O quanto as partes de um módulo trabalham para um mesmo propósito. Busca-se alta coesão: cada módulo faz uma coisa. *MOD-202, aula 5.*
+
 **Commit.** Registro permanente de um conjunto de mudanças num repositório Git, com autor, data, mensagem e um identificador por hash. *MOD-106, aula 5.*
 
 **Complexidade (notação O).** Forma de descrever como o custo de um algoritmo cresce com o tamanho da entrada, ignorando constantes: O(1), O(log n), O(n), O(n log n), O(n²). *MOD-102, aula 6.*
@@ -112,6 +124,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ***Dasein*** (alemão). "Ser-aí": em Heidegger, o ser humano enquanto ente que compreende o ser e existe sempre já num mundo de práticas. *MOD-101, aula 7.*
 
+**Dataclass.** Recurso do Python que gera construtor, representação e comparação para classes que guardam dados; com frozen=True, o objeto é imutável. *MOD-202, aula 2.*
+
 **Datificação.** Transformação de aspectos da vida em dados quantificáveis, que podem ser armazenados, cruzados e vendidos. *MOD-101, aula 7.*
 
 **Desencantamento do mundo.** Em Weber, a eliminação progressiva da magia como meio de salvação e de controle do mundo, substituída pelo cálculo racional. *MOD-105, aula 6.*
@@ -132,11 +146,15 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Dualidade de poderes.** Situação de crise revolucionária em que dois poderes rivais coexistem num país, cada um apoiado numa classe, até que um elimine o outro (Rússia, fevereiro a outubro de 1917). *MOD-201, aula 5.*
 
+**Duck typing.** Em Python, o que importa é se o objeto tem os métodos necessários, e não a sua classe. *MOD-202, aula 3.*
+
 ## E
 
 **Economicismo.** Corrente do movimento operário russo por volta de 1900 que limitava a ação operária às lutas econômicas; alvo de *Que Fazer?*. *MOD-201, aula 2.*
 
 **Efervescência coletiva.** Em Durkheim, o estado de intensa excitação emocional que surge quando um grupo se reúne em rituais; é nesses momentos que a sociedade cria o sagrado. *MOD-105, aula 4.*
+
+**Encapsulamento.** Esconder os detalhes internos de um objeto e expor uma interface controlada. Ligado à ocultação de informação de Parnas (1972): cada módulo esconde uma decisão que pode mudar. *MOD-202, aula 2.*
 
 **Endereçamento por conteúdo.** Identificar um arquivo pelo hash do seu conteúdo, e não pelo lugar onde está. Base do Git, do BitTorrent e do projeto do MOD-107. *MOD-107, aula 7.*
 
@@ -186,6 +204,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ## H
 
+**Herança.** Mecanismo em que uma classe filha reaproveita e especializa outra (relação é um). Cria acoplamento forte e hierarquias rígidas. *MOD-202, aula 3.*
+
 **Herfindahl-Hirschman (índice).** Soma dos quadrados das participações de mercado, em porcentagem: de perto de zero a 10.000. Mede a concentração de um mercado; uma fusão de empresas com participações a e b o aumenta em 2ab. *MOD-201, aula 4.*
 
 **HTTP e HTTPS.** HTTP é o protocolo de texto da Web (requisição e resposta); HTTPS é o HTTP dentro de um túnel cifrado pelo TLS. *MOD-104, aula 2.*
@@ -199,6 +219,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Imperialismo.** Em Lênin, a fase do capitalismo em que dominam os monopólios e o capital financeiro, a exportação de capitais ganha importância e o mundo está repartido entre grupos monopolistas e potências. *MOD-201, aula 4.*
 
 **Índice invertido.** Estrutura que associa cada palavra aos documentos em que aparece; coração dos mecanismos de busca. *MOD-102, aula 7.*
+
+**Injeção de dependência.** Técnica em que um objeto recebe de fora os objetos de que depende, em vez de criá-los. Permite trocar implementações e testar com objetos falsos. *MOD-202, aula 5.*
 
 **Integração e regulação.** Em Durkheim, as duas dimensões da relação entre indivíduo e sociedade: quanto o indivíduo está ligado ao grupo e quanto as normas orientam os seus desejos. *MOD-105, aula 3.*
 
@@ -228,6 +250,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Metadados.** Dados sobre dados: quem, quando, onde, com que equipamento. Cruzados em massa, revelam tanto quanto o conteúdo. *MOD-104, aula 4.*
 
+**Métodos ágeis.** Processos de desenvolvimento em ciclos curtos, com entregas frequentes e adaptação contínua (Manifesto Ágil, 2001). *MOD-202, aula 1.*
+
 **Modelo de ameaças.** Análise do que se quer proteger, de quem, com que probabilidade e consequências, e a que custo, para escolher medidas de segurança proporcionais. *MOD-104, aula 5.*
 
 **Modo de produção.** Combinação historicamente determinada de forças produtivas e relações de produção (escravista, feudal, capitalista). *MOD-103, aula 2.*
@@ -254,6 +278,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ## P
 
+**Padrão de projeto.** Solução nomeada e reutilizável para um problema recorrente de projeto (Strategy, Adapter, Factory, Decorator, Repository). Catálogo clássico de 1994. *MOD-202, aula 6.*
+
 **Par a par (P2P) e rede federada.** Numa rede par a par, os participantes se comunicam diretamente; numa rede federada, servidores independentes se comunicam por um protocolo comum (e-mail, Mastodon). *MOD-107, aula 7.*
 
 **PBKDF2 (derivação de chave).** Função que transforma uma senha em chave criptográfica de modo propositalmente lento, com sal aleatório. *MOD-104, aula 5.*
@@ -264,6 +290,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ***Poiesis* e *praxis*** (grego). Produção (o fim é um produto separado da atividade) e ação (o fim está na própria atividade). *MOD-101, aula 3.*
 
+**Polimorfismo.** Tratar objetos de classes diferentes pela mesma interface: o mesmo código chama o mesmo método e cada objeto responde do seu jeito. *MOD-202, aula 3.*
+
 ***Pólis*** (grego). A cidade-Estado grega, comunidade política autônoma. *MOD-101, aula 1.*
 
 **Práxis.** Atividade humana prática e transformadora; nas *Teses sobre Feuerbach*, critério da verdade. *MOD-103, aula 2.*
@@ -272,6 +300,10 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Pull Request.** Pedido para incorporar as mudanças de um ramo a um projeto, com espaço para revisão e discussão. *MOD-106, aula 6.*
 
+**Pydantic.** Biblioteca Python que usa as anotações de tipo para validar e converter dados vindos de fora, com mensagens de erro claras. *MOD-202, aula 4.*
+
+**pyproject.toml.** Arquivo padrão que descreve um projeto Python: nome, versão, dependências, build e configuração de ferramentas. *MOD-202, aula 8.*
+
 ## R
 
 **Reconhecimento (*Anerkennung*).** Em Hegel, a consciência de si só se realiza no reconhecimento de outra consciência de si; na dialética do senhor e do escravo, o reconhecimento unilateral fracassa. *MOD-101, aula 4.*
@@ -279,6 +311,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Recursão.** Técnica em que uma função resolve um problema chamando a si mesma para uma versão menor, até um caso base. *MOD-102, aula 4.*
 
 **Representações coletivas.** Em Durkheim, formas de pensar produzidas pela vida em grupo, inclusive as categorias do pensamento (tempo, espaço, classificação). *MOD-105, aula 4.*
+
+**Requisito funcional e não funcional.** O que o sistema faz (funcional) e como deve ser: rápido, seguro, acessível, auditável (não funcional). *MOD-202, aula 1.*
 
 **Retórica.** Arte de convencer pela palavra. No *Górgias*, uma rotina que imita a justiça como a confeitaria imita a medicina. *MOD-101, aula 2.*
 
@@ -333,6 +367,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 ## V
 
 **Valor de uso e valor de troca.** A utilidade concreta de uma coisa e a proporção em que ela se troca por outras; o valor de troca é a forma em que aparece o valor. *MOD-103, aula 4.*
+
+**Versionamento semântico.** Convenção MAIOR.MENOR.CORREÇÃO: muda o MAIOR quando a interface pública quebra a compatibilidade, o MENOR com funcionalidade nova compatível, a CORREÇÃO só com consertos. *MOD-202, aula 8.*
 
 ## Z
 

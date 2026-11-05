@@ -6,7 +6,7 @@ cycle: "ciclo-1"
 cycleOrder: 1
 moduleOrder: 4
 axisId: "eixo-3"
-secondaryAxisIds: ["eixo-1"]
+secondaryAxisIds: ["eixo-4"]
 language: "pt-BR"
 languageNotice: "Aviso de Idioma: Este currículo e todos os seus recursos de apoio foram estruturados exclusivamente em Português (PT-BR)."
 estimatedHours: 50
