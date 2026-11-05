@@ -26,6 +26,10 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Afinidade eletiva.** Expressão que Weber toma de Goethe para designar a atração e o reforço mútuo entre duas formas sociais (uma ética religiosa e uma conduta econômica), sem que uma seja simplesmente causa da outra. *MOD-105, aula 6.*
 
+**Agir comunicativo.** Em Habermas, a ação em que as pessoas coordenam os seus planos buscando entendimento por razões que todos possam aceitar, em vez de se influenciarem como meios. *MOD-205, aula 7.*
+
+**Agir estratégico.** Em Habermas, a ação orientada ao êxito, que trata os outros como meios e os influencia por incentivos, ameaças ou manipulação. *MOD-205, aula 7.*
+
 **Alegoria.** Em Benjamin, forma de expressão em que as coisas aparecem como ruínas e fragmentos carregados de sentido atribuído, em oposição ao símbolo, que sugere uma totalidade harmoniosa. *MOD-203, aula 6.*
 
 ***Aletheia*** (grego). Verdade. Heidegger a lê como "desvelamento": o que sai do encobrimento e aparece. *MOD-101, aula 7.*
@@ -76,6 +80,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Binário.** Sistema de numeração de base 2, com os algarismos 0 e 1. *MOD-102, aula 1.*
 
+**Biopolítica (biopoder).** Em Foucault, a forma de poder que, desde o século XVIII, toma como objeto a vida da população (natalidade, mortalidade, saúde) e a regula pela estatística e pela medicina social: fazer viver e deixar morrer. *MOD-205, aula 6.*
+
 **Bit e byte.** O bit é a menor unidade de informação (0 ou 1); o byte é um grupo de 8 bits, que representa 256 valores. *MOD-102, aula 1.*
 
 **Bloco histórico.** Em Gramsci, a unidade entre estrutura econômica e superestruturas (ideologia, cultura, direito) numa formação social concreta. *MOD-203, aula 3.*
@@ -108,11 +114,15 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Cifra simétrica e assimétrica.** Na simétrica (AES), a mesma chave cifra e decifra; na assimétrica (RSA, curvas elípticas), cada pessoa tem um par de chaves, pública e privada, o que resolve a troca de chaves e permite assinaturas. *MOD-104, aula 5.*
 
+**Circunstância.** Em Ortega, tudo o que rodeia o eu (corpo, coisas, pessoas, época, país) e com que ele tem de se haver para viver: "eu sou eu e a minha circunstância". *MOD-205, aula 1.*
+
 **Classe e objeto.** A classe é o molde que define atributos e métodos; o objeto é um exemplar concreto, com os seus próprios valores. *MOD-202, aula 2.*
 
 **Cobertura de código.** Proporção do código (linhas ou ramos de decisão) executada pelo menos uma vez durante os testes. Mostra o que não foi testado, mas não a qualidade do que foi. *MOD-204, aula 4.*
 
 **Coesão.** O quanto as partes de um módulo trabalham para um mesmo propósito. Busca-se alta coesão: cada módulo faz uma coisa. *MOD-202, aula 5.*
+
+**Colonização do mundo da vida.** Em Habermas, a invasão de esferas coordenadas pela comunicação (família, escola, cultura, debate público) pelos meios sistêmicos do dinheiro e do poder. *MOD-205, aula 7.*
 
 **Commit.** Registro permanente de um conjunto de mudanças num repositório Git, com autor, data, mensagem e um identificador por hash. *MOD-106, aula 5.*
 
@@ -136,9 +146,13 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ***Copyleft***. Uso do direito autoral para garantir que uma obra e todas as suas versões modificadas continuem livres (licença GPL, CC BY-SA). *MOD-106, aula 6.*
 
+**Corpos dóceis.** Em Foucault, corpos que a disciplina torna ao mesmo tempo mais úteis e mais obedientes, pelo controle minucioso das atividades. *MOD-205, aula 6.*
+
 **CPF (Cadastro de Pessoas Físicas).** Número de 11 dígitos da Receita Federal; os dois últimos são dígitos verificadores calculados por somas ponderadas, que detectam a maioria, mas não todos, os erros de digitação. *MOD-204, aulas 2 e 4.*
 
 **Crise orgânica.** Em Gramsci, crise que atinge ao mesmo tempo a economia e a hegemonia: a classe dirigente perde o consenso e conserva apenas o domínio. *MOD-203, aula 3.*
+
+**Crítica imanente.** Crítica que examina uma obra pelos seus próprios conceitos e pretensões, mostrando contradições e pressupostos, em vez de julgá-la de fora. *MOD-205, aula 5.*
 
 **Crosta de aço (*stahlhartes Gehäuse*).** Imagem de Weber para a ordem econômica moderna, que se tornou uma estrutura dura que determina a vida de todos, mesmo depois de perder o sentido religioso original. Também traduzida como "jaula de ferro". *MOD-105, aula 6.*
 
@@ -163,6 +177,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Dicionário (*dict*).** Coleção de pares chave e valor com busca rápida pela chave; em Python, implementado como tabela de dispersão. *MOD-102, aula 7; MOD-106, aula 2.*
 
 **Diferenciação do campesinato.** Em Lênin, a divisão da massa camponesa em burguesia rural, que contrata trabalho, e proletariado rural, que vende trabalho. *MOD-201, aula 1.*
+
+**Disciplina.** Em Foucault, o conjunto de técnicas que organizam o espaço, o tempo e os gestos dos corpos em escolas, quartéis, fábricas e prisões, para torná-los úteis e obedientes. *MOD-205, aula 6.*
 
 **DNS.** Sistema hierárquico e distribuído que traduz nomes de domínio em endereços IP. *MOD-104, aula 1.*
 
@@ -190,6 +206,10 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Equidade (*epieikeia*).** Em Aristóteles, a correção da lei geral no caso particular, comparada à régua flexível de chumbo de Lesbos. *MOD-101, aula 3.*
 
+**Esfera pública.** Em Habermas, o espaço social em que pessoas privadas se reúnem como público para discutir pela razão assuntos de interesse comum e formar uma opinião que controla o poder. *MOD-205, aula 7.*
+
+**Especialismo.** Em Ortega, a condição do cientista ou técnico que domina uma fração mínima do saber e se comporta em todo o resto com a arrogância de quem se acha sábio: o sábio-ignorante. *MOD-205, aula 2.*
+
 **Estado integral.** Em Gramsci, o Estado entendido como sociedade política mais sociedade civil: hegemonia revestida de coerção. *MOD-203, aula 2.*
 
 **Estetização da política.** Em Benjamin, a transformação da política em espetáculo estético pelo fascismo, que dá às massas expressão sem lhes dar direitos. A resposta comunista seria a politização da arte. *MOD-203, aula 8.*
@@ -197,6 +217,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Ética da convicção e ética da responsabilidade.** Em Weber: agir segundo princípios, deixando o resultado ao destino; ou responder pelas consequências previsíveis dos próprios atos. A política madura combina as duas. *MOD-105, aula 7.*
 
 **Eticidade (*Sittlichkeit*).** Em Hegel, a vida ética concreta de uma comunidade, dividida em família, sociedade civil e Estado. *MOD-101, aula 5.*
+
+**Exame.** Em Foucault, a técnica que combina vigilância e sanção normalizadora e faz de cada indivíduo um caso documentado: a prova escolar, o exame médico, a avaliação de desempenho. *MOD-205, aula 6.*
 
 **Exceção.** Em programação, sinal de erro que interrompe o fluxo normal; pode ser capturada com `try` e `except`. *MOD-106, aula 3.*
 
@@ -210,7 +232,11 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Falácia ecológica.** Erro de tirar conclusões sobre indivíduos a partir de dados agregados de grupos. *MOD-105, aula 3.*
 
+**Falácia genética.** Erro de raciocínio que julga uma ideia pela sua origem (quem a formulou, em que circunstâncias) e não pelas razões que a sustentam. *MOD-205, aula 5.*
+
 **Falha, defeito e erro.** O erro (engano) é a ação humana equivocada; ele deixa no código um defeito (o bug); o defeito, executado em certas condições, produz uma falha, o comportamento errado observado. *MOD-204, aula 1.*
+
+**Fanopeia, melopeia e logopeia.** Em Pound, as três maneiras de carregar a linguagem de sentido: projetar uma imagem visual, carregar as palavras de música e ritmo, e a dança do intelecto entre as palavras. *MOD-205, aula 3.*
 
 **Fantasmagoria.** Em Benjamin, o mundo de mercadorias e imagens deslumbrantes do século XIX, que se apresenta como sonho e esconde as relações de produção. *MOD-203, aula 9.*
 
@@ -242,9 +268,13 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 ## G
 
+**Genealogia.** Em Foucault, inspirado em Nietzsche, a investigação de como práticas e saberes que parecem naturais foram constituídos em lutas concretas, e com que efeitos de poder. *MOD-205, aula 6.*
+
 ***General Intellect*** (inglês, usado por Marx). O conhecimento social acumulado que, objetivado nas máquinas, se torna a principal força produtiva. *MOD-103, aula 6.*
 
 ***Gestell*** (alemão). Armação ou com-posição: em Heidegger, a essência da técnica moderna, que dispõe tudo, a natureza e as pessoas, como recurso. *MOD-101, aula 7.*
+
+**Governamentalidade.** Em Foucault, o conjunto de práticas e saberes pelos quais se conduz a conduta das pessoas; no neoliberalismo, governar criando ambientes de mercado e fazendo de cada um um empresário de si. *MOD-205, aula 6.*
 
 **Guerra de movimento e guerra de posição.** Em Gramsci, o ataque frontal ao poder de Estado (movimento) e a luta longa pela hegemonia nas trincheiras da sociedade civil (posição), necessária no Ocidente. *MOD-203, aula 2.*
 
@@ -258,6 +288,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Herfindahl-Hirschman (índice).** Soma dos quadrados das participações de mercado, em porcentagem: de perto de zero a 10.000. Mede a concentração de um mercado; uma fusão de empresas com participações a e b o aumenta em 2ab. *MOD-201, aula 4.*
 
+**Homem-massa.** Em Ortega, o tipo humano que não se exige nada de especial, sente-se igual a todo mundo e satisfeito com isso, e reclama direitos sem obrigações; para Ortega, não é uma classe social. *MOD-205, aula 2.*
+
 **HTTP e HTTPS.** HTTP é o protocolo de texto da Web (requisição e resposta); HTTPS é o HTTP dentro de um túnel cifrado pelo TLS. *MOD-104, aula 2.*
 
 ## I
@@ -267,6 +299,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Ideologia.** Em *A Ideologia Alemã*, o conjunto de ideias que apresenta interesses particulares como universais e relações históricas como naturais. "As ideias da classe dominante são as ideias dominantes." *MOD-103, aula 2.*
 
 **Imagem dialética.** Em Benjamin, o encontro súbito entre um momento do passado e o presente, que forma uma constelação e ilumina os dois. *MOD-203, aula 9.*
+
+**Imagismo.** Movimento poético lançado por Pound, H.D. e Richard Aldington por volta de 1912: tratamento direto da coisa, nenhuma palavra supérflua, ritmo da frase musical. *MOD-205, aula 3.*
 
 **Imperialismo.** Em Lênin, a fase do capitalismo em que dominam os monopólios e o capital financeiro, a exportação de capitais ganha importância e o mundo está repartido entre grupos monopolistas e potências. *MOD-201, aula 4.*
 
@@ -314,6 +348,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Metadados.** Dados sobre dados: quem, quando, onde, com que equipamento. Cruzados em massa, revelam tanto quanto o conteúdo. *MOD-104, aula 4.*
 
+**Método ideogramático.** Em Pound, a partir de uma leitura de Fenollosa sobre a escrita chinesa, o procedimento de justapor fatos e imagens concretas para que a ideia geral surja do conjunto; parente da montagem. *MOD-205, aula 3.*
+
 **Métodos ágeis.** Processos de desenvolvimento em ciclos curtos, com entregas frequentes e adaptação contínua (Manifesto Ágil, 2001). *MOD-202, aula 1.*
 
 **Mock.** Dublê de teste que, além de responder, registra como foi chamado, para que o teste confira essas interações. *MOD-204, aula 3.*
@@ -327,6 +363,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Monopólio da violência legítima.** Definição de Estado de Weber: a comunidade que reivindica com êxito, num território, o monopólio do uso legítimo da força física. *MOD-105, aula 7.*
 
 **Montagem.** Procedimento de construir uma obra justapondo fragmentos heterogêneos sem narrativa contínua, para que o choque entre eles produza sentido. Em Benjamin, também forma de conhecimento. *MOD-203, aula 6.*
+
+**Mundo da vida.** Em Habermas, o horizonte de saberes, normas e identidades compartilhados em que se dá a comunicação cotidiana; opõe-se ao sistema (economia e Estado). *MOD-205, aula 7.*
 
 **Mutualismo.** Proposta de Proudhon de uma economia de pequenos produtores associados, com crédito mútuo sem juro. *MOD-107, aula 1.*
 
@@ -348,17 +386,25 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Padrão de projeto.** Solução nomeada e reutilizável para um problema recorrente de projeto (Strategy, Adapter, Factory, Decorator, Repository). Catálogo clássico de 1994. *MOD-202, aula 6.*
 
+**Panóptico.** Projeto de prisão de Jeremy Bentham (1791), com uma torre de onde um vigia vê todas as celas sem ser visto; para Foucault, o diagrama do poder disciplinar. *MOD-205, aula 6.*
+
 **Par a par (P2P) e rede federada.** Numa rede par a par, os participantes se comunicam diretamente; numa rede federada, servidores independentes se comunicam por um protocolo comum (e-mail, Mastodon). *MOD-107, aula 7.*
 
 **Parametrização.** Recurso que roda a mesma função de teste várias vezes, uma para cada conjunto de entradas e resultado esperado. *MOD-204, aula 2.*
 
 **PBKDF2 (derivação de chave).** Função que transforma uma senha em chave criptográfica de modo propositalmente lento, com sal aleatório. *MOD-104, aula 5.*
 
+**Personificação do abstrato.** Em Moishe Postone, o mecanismo que atribui a dominação impessoal do capital a um grupo de pessoas concretas apresentado como culpado; a estrutura do antissemitismo moderno. *MOD-205, aula 4.*
+
+**Perspectivismo.** Tese de Ortega segundo a qual a realidade só se dá a partir de pontos de vista, cada um verdadeiro na sua parte; a verdade se aproxima pela integração das perspectivas. *MOD-205, aula 1.*
+
 ***Phármakon*** (grego). Remédio e veneno ao mesmo tempo. Platão usa a palavra para a escrita; o curso a usa para toda técnica. *MOD-101, aula 2.*
 
 ***Phronesis*** (grego). Prudência ou sabedoria prática: saber deliberar bem sobre o que é bom para a vida humana em situações concretas. Não se reduz a regras. *MOD-101, aula 3.*
 
 **Pirâmide de testes.** Modelo de Mike Cohn que recomenda muitos testes unitários, menos testes de integração e poucos testes de ponta a ponta. *MOD-204, aula 1.*
+
+**Poder-saber.** Em Foucault, a produção mútua entre poder e saber: o poder cria objetos de conhecimento (o delinquente, o louco) e os saberes tornam possíveis novas formas de poder. *MOD-205, aula 6.*
 
 ***Poiesis* e *praxis*** (grego). Produção (o fim é um produto separado da atividade) e ação (o fim está na própria atividade). *MOD-101, aula 3.*
 
@@ -369,6 +415,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Posição teleológica.** Em Lukács, a estrutura do trabalho humano: pôr previamente na consciência uma finalidade e realizá-la mobilizando as cadeias causais da natureza. *MOD-203, aula 5.*
 
 **Práxis.** Atividade humana prática e transformadora; nas *Teses sobre Feuerbach*, critério da verdade. *MOD-103, aula 2.*
+
+**Pretensões de validade.** Em Habermas, o que todo falante afirma implicitamente e pode ser chamado a justificar: verdade, correção normativa e sinceridade (além da inteligibilidade). *MOD-205, aula 7.*
 
 **Proletariado.** A classe dos trabalhadores assalariados que não possuem meios de produção e precisam vender a sua força de trabalho. *MOD-103, aula 3.*
 
@@ -385,6 +433,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 **Questão meridional.** Em Gramsci, o problema da aliança entre os operários do Norte da Itália e os camponeses do Sul, e da ideologia que os separava. *MOD-203, aula 1.*
 
 ## R
+
+**Razão vital.** Em Ortega, a razão que parte da vida concreta, situada e obrigada a decidir; também chamada razão histórica, porque o ser humano não tem natureza, tem história. *MOD-205, aula 1.*
 
 **Reconhecimento (*Anerkennung*).** Em Hegel, a consciência de si só se realiza no reconhecimento de outra consciência de si; na dialética do senhor e do escravo, o reconhecimento unilateral fracassa. *MOD-101, aula 4.*
 
@@ -411,6 +461,8 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 ## S
 
 **Sagrado e profano.** Em Durkheim, a divisão fundamental de toda religião: o sagrado é separado e protegido por proibições. *MOD-105, aula 4.*
+
+**Sanção normalizadora.** Em Foucault, a punição ou recompensa de cada um pela distância em relação a uma norma comparativa, que hierarquiza os indivíduos e produz o anormal. *MOD-205, aula 6.*
 
 **SBOM (lista de materiais de software).** Inventário legível por máquina de todos os componentes de um programa, com versões, licenças e origem, nos formatos CycloneDX ou SPDX. *MOD-204, aula 6.*
 
@@ -468,9 +520,13 @@ Este glossário reúne, em ordem alfabética, os termos que aparecem com tooltip
 
 **Transformismo.** Em Gramsci, a absorção gradual das lideranças dos grupos adversários pela classe dirigente, que os decapita sem confronto aberto. *MOD-203, aula 3.*
 
+**Triunfo do realismo.** Expressão de Engels, desenvolvida por Lukács, para a capacidade de uma grande obra de mostrar a realidade contra as convicções do próprio autor, como em Balzac. *MOD-205, aula 5.*
+
 ## U
 
 **Unicode e UTF-8.** O Unicode dá um número (ponto de código) a cada caractere de todas as escritas; o UTF-8 grava esses números em 1 a 4 bytes. *MOD-102, aula 1.*
+
+**Usura.** A cobrança de juros, condenada pela Igreja medieval; em Pound, o nome de um poder financeiro que degrada o trabalho, a arte e a vida. *MOD-205, aula 4.*
 
 ## V
 
