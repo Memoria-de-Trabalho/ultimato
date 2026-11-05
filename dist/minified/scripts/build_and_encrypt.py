@@ -624,6 +624,7 @@ def build_viewer_html(encrypted_bundle_json: str, vendor_prefix: str = "vendor/"
     const VENDOR = "{vendor_prefix}";
     let PAYLOAD = null;
     let ORDEM = [];
+    let RENDER = 0;
     let libs = null;
     function carregarScript(src) {{
       return new Promise((ok, falha) => {{
@@ -690,17 +691,17 @@ def build_viewer_html(encrypted_bundle_json: str, vendor_prefix: str = "vendor/"
       const d = PAYLOAD.curriculum;
       const files = PAYLOAD.repoFiles;
       const chaves = Object.keys(files);
-      const item = k => `<li><button type="button" class="btn-arq" data-doc="${{esc(k)}}">${{esc(tituloDoc(k))}}</button></li>`;
+      const item = (k, rotulo) => `<li><button type="button" class="btn-arq" data-doc="${{esc(k)}}">${{esc(rotulo || tituloDoc(k))}}</button></li>`;
       const geral = ["README.md", "docs/COMO-ESTUDAR.md", "docs/GLOSSARIO.md", "docs/LINHA-DO-TEMPO.md", "docs/CREDITOS-IMAGENS.md"].filter(k => files[k] != null);
       ORDEM = [...geral];
-      let html = `<p class="ciclo-rotulo">Comece aqui</p><ul>${{geral.map(item).join("")}}</ul>`;
+      let html = `<p class="ciclo-rotulo">Comece aqui</p><ul>${{geral.map(k => item(k)).join("")}}</ul>`;
       d.cycles.forEach(c => {{
         html += `<p class="ciclo-rotulo">Ciclo ${{c.order}}</p>`;
         c.modules.forEach(m => {{
           const pasta = m.markdownPath.replace(/[^/]+$/, "") + m.code.toLowerCase() + "/";
           const aulas = chaves.filter(k => k.startsWith(pasta) && k.endsWith(".md")).sort();
           ORDEM.push(m.markdownPath, ...aulas);
-          html += `<details data-mod="${{esc(m.markdownPath)}}"><summary><b>${{esc(m.code)}}</b> ${{esc(m.title)}} <small>(${{aulas.length}} aulas)</small></summary><ul>${{item(m.markdownPath)}}${{aulas.map(item).join("")}}</ul></details>`;
+          html += `<details data-mod="${{esc(m.markdownPath)}}"><summary><b>${{esc(m.code)}}</b> ${{esc(m.title)}} <small>(${{aulas.length === 1 ? "1 aula" : aulas.length + " aulas"}})</small></summary><ul>${{item(m.markdownPath, "Guia do módulo")}}${{aulas.map(k => item(k)).join("")}}</ul></details>`;
         }});
       }});
       const nav = document.getElementById("a-list");
@@ -711,6 +712,7 @@ def build_viewer_html(encrypted_bundle_json: str, vendor_prefix: str = "vendor/"
       const files = PAYLOAD.repoFiles;
       if (files[caminho] == null) return;
       const art = document.getElementById("a-content");
+      const pedido = ++RENDER;
       art.innerHTML = "<p>Carregando aula...</p>";
       try {{
         await carregarBibliotecas();
@@ -757,8 +759,9 @@ def build_viewer_html(encrypted_bundle_json: str, vendor_prefix: str = "vendor/"
       try {{
         await mermaid.run({{ nodes: art.querySelectorAll(".mermaid") }});
       }} catch (erro) {{
-        console.error(erro);
+        if (pedido === RENDER) console.error(erro);
       }}
+      if (pedido !== RENDER) return;
       const i = ORDEM.indexOf(caminho);
       const ant = ORDEM[i - 1];
       const prox = ORDEM[i + 1];

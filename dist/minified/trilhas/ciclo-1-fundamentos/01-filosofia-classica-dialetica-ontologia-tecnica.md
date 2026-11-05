@@ -11,7 +11,7 @@ language: "pt-BR"
 languageNotice: "Aviso de Idioma: Este currículo e todos os seus recursos de apoio foram estruturados exclusivamente em Português (PT-BR)."
 estimatedHours: 70
 status: "in_progress"
-progressPercent: 100
+progressPercent: 40
 prerequisites: []
 tags: ["platao", "aristoteles", "hegel", "feuerbach", "heidegger", "dialetica", "ontologia-da-tecnica"]
 ---
