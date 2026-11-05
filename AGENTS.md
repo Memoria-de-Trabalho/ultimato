@@ -15,6 +15,7 @@ Repositório oficial de **O Último Curso**, formação aberta, gratuita e inter
 - **Rigor teórico nas Ciências Sociais:** os módulos teóricos estudam diretamente as fontes primárias em português de Platão, Aristóteles, Hegel, Feuerbach, Heidegger, Marx, Engels, Durkheim, Weber, Bakunin, Kropotkin, Lênin (amplo), Trótski (amplo), Gramsci (amplo), Lukács, Walter Benjamin (amplo), Ortega y Gasset e Ezra Pound (incluindo o estudo metodológico da necessidade de separar analiticamente obra e pessoa), Foucault, Habermas, Frantz Fanon, Sérgio Buarque de Holanda e Florestan Fernandes.
 - **Identidade visual do Memória de Trabalho:** papel `#F2EBDD`, tinta `#141414`, vermelho `#C8102E`, amarelo `#FFE600`, suave `#5B544A`, linha `#D8CDB8`; títulos em `Anton`, chapéus/metadados em `Special Elite`, corpo em `Inter`.
 - **Autenticação simplificada por minificação e criptografia:** nunca crie servidores complexos de login. O script `scripts/build_and_encrypt.py` minifica todos os arquivos do repositório em `dist/minified/`, empacota o currículo e os arquivos, cifra o pacote inteiro com `PBKDF2-HMAC-SHA256` (250.000 iterações) + `AES-256-GCM` usando a senha como chave e gera `index.html` (na raiz e em `viewer/index.html`) com o cofre embutido.
+- **Aulas:** siga a seção "Recursos didáticos das aulas" de `docs/ESTILO.md` (estrutura, tooltips com `<abbr>`, diagramas Mermaid, imagens só da Wikimedia Commons com licença conferida e crédito em `docs/CREDITOS-IMAGENS.md`, código Python testado).
 - **Não edite à mão o que é compilado:** `index.html`, `viewer/index.html`, `assets/curriculum.enc.json`, `viewer/assets/curriculum.enc.json` e `dist/minified/` são gerados por `scripts/build_and_encrypt.py`. Edite sempre a fonte (`data/curriculum.json`, `README.md`, `trilhas/**/*.md`, `scripts/build_and_encrypt.py`) e rode o compilador.
 
 ## Estrutura do repositório
@@ -25,7 +26,10 @@ Repositório oficial de **O Último Curso**, formação aberta, gratuita e inter
 | `README.md` | Manifesto, cânone teórico, matriz curricular de 20 módulos (1.320h) e instruções |
 | `data/curriculum.json` | Fonte de dados estruturada dos 5 eixos, 3 ciclos e 20 módulos |
 | `schemas/curriculum.schema.json` | JSON Schema (Draft 2020-12) para validação da matriz curricular |
-| `trilhas/ciclo-*/` | Ementas completas em Markdown com cabeçalho YAML para todos os 20 módulos |
+| `trilhas/ciclo-*/` | Guias dos 20 módulos em Markdown com cabeçalho YAML |
+| `trilhas/ciclo-*/mod-XXX/` | Aulas de cada módulo (`aula-NN-<slug>.md`), com tooltips, diagramas Mermaid, imagens da Wikimedia Commons e exercícios com gabarito |
+| `docs/COMO-ESTUDAR.md`, `docs/LINHA-DO-TEMPO.md`, `docs/GLOSSARIO.md`, `docs/CREDITOS-IMAGENS.md` | Guias de entrada do aluno, glossário geral dos tooltips e créditos de todas as imagens |
+| `vendor/` | Cópias locais de marked, DOMPurify e Mermaid, usadas pelo leitor de aulas do portal (não editar) |
 | `templates/` | Modelos de fichamento teórico (`FICHAMENTO_TEORICO.md`), entrega de projeto (`ENTREGA_PROJETO.md`) e progresso (`PROGRESSO_ALUNO.md`) |
 | `docs/ESTILO.md` | Guia de estilo editorial e terminológico |
 | `docs/arquitetura-hospedagem/` | Documentação da criptografia estática e ponte com `lucasrafaldini.github.io` |

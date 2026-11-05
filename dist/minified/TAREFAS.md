@@ -9,7 +9,19 @@
 - [x] Pipeline unificado de minificação de todos os arquivos e criptografia por chave (`AES-256-GCM` + `PBKDF2-HMAC-SHA256`) em `scripts/build_and_encrypt.py`.
 - [x] Configuração agêntica completa (`AGENTS.md`, `CLAUDE.md`, `docs/ESTILO.md`, `scripts/revisar-estilo.py`, `.claude/skills/`, `.claude/agents/`, `.agents/skills/`).
 
+## Concluído na versão 2.1 (aulas do Ciclo 1)
+
+- [x] Leitor de aulas no portal (aba Aulas e Ementas), com Markdown, diagramas Mermaid, tooltips acessíveis por mouse, teclado e toque, e navegação entre aulas.
+- [x] Guias de entrada: `docs/COMO-ESTUDAR.md`, `docs/LINHA-DO-TEMPO.md`, `docs/GLOSSARIO.md` e `docs/CREDITOS-IMAGENS.md`.
+- [x] Ciclo 1 completo: guias dos 7 módulos e 46 aulas (MOD-101 a MOD-107), com imagens históricas conferidas, diagramas, exercícios com gabarito e código Python testado.
+- [x] Correção do cabeçalho do MOD-102, que dizia MOD-101.
+
 ## Próximos passos
+
+- [ ] Escrever as aulas do Ciclo 2 (MOD-201 a MOD-207), começando por MOD-201 (Lênin e Trótski) e MOD-202 (engenharia de software).
+- [ ] Escrever as aulas do Ciclo 3 (MOD-301 a MOD-306).
+- [ ] Conferir na Wikimedia Commons as imagens do Ciclo 2 (Lênin, Trótski, Gramsci, Lukács, Benjamin, Ortega, Pound, Fanon, Sérgio Buarque, Florestan) e acrescentá-las aos créditos.
+- [ ] Acrescentar um teste automático que execute os blocos Python das aulas e desenhe todos os diagramas Mermaid.
 
 - [ ] Expandir a bibliografia comentada capítulo a capítulo em `recursos/bibliografia/`.
 - [ ] Adicionar código-base inicial dos laboratórios Python em `projetos/ciclo-1/`.

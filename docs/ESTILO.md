@@ -21,3 +21,31 @@ O script `scripts/revisar-estilo.py` barra automaticamente os itens abaixo:
 5. **Clichês de texto gerado:** "vale ressaltar", "vale destacar", "é importante destacar", "no fim do dia", "em suma", "mergulhar", "navegar por", "desvendar", "potencializar", "alavancar", "robusto", "divisor de águas".
 6. **Anglicismos de ONG/consultoria:** "Civic Tech" ou "civic-tech". Use sempre "Ferramentas de Interesse Público" ou "Software Livre de Interesse Público". <!-- estilo: ok -->
 7. **Exclamação** em títulos, textos ou avisos.
+
+## Recursos didáticos das aulas
+
+As aulas em `trilhas/<ciclo>/mod-XXX/aula-NN-<slug>.md` seguem regras próprias, além das proibições acima.
+
+### Estrutura
+
+Cabeçalho YAML com `tipo: "aula"`, `modulo`, `ordem`, `titulo` (no formato `Aula N · Título`), `duracao` e `language`; aviso de idioma; e as seções, nesta ordem: "O que você vai aprender", "Pergunta de abertura", a exposição em seções numeradas, "Leitura guiada", "Exercícios" (gabarito dentro de `<details>`), "Resumo da aula" e "Para ir além".
+
+### Tooltips
+
+Todo jargão (grego, alemão, marxista, sociológico, computacional) recebe tooltip na primeira vez que aparece em cada aula, com a sintaxe `<abbr title="Termo: definição curta.">termo</abbr>`. O texto do `title` não pode conter aspas duplas nem a barra vertical. Todo termo com tooltip deve ter verbete correspondente em `docs/GLOSSARIO.md`.
+
+### Diagramas
+
+Conceitos com muitas peças móveis ganham um diagrama Mermaid (fluxograma, linha do tempo, sequência ou `gitGraph`). Rótulos com caracteres especiais vão entre aspas; quebras de linha usam `<br/>`. Não use a barra vertical dentro de rótulos. Todo diagrama precisa ser desenhado sem erro no portal (o leitor do `index.html`) e no GitHub.
+
+### Imagens
+
+Só entram imagens da Wikimedia Commons cuja existência e licença tenham sido conferidas, referenciadas pelo endereço `https://commons.wikimedia.org/wiki/Special:FilePath/<arquivo>?width=500` (sem o parâmetro `width` quando a imagem original tiver menos de 500 pixels de largura). Cada imagem tem legenda em itálico logo abaixo, com autor, data e licença, e uma linha em `docs/CREDITOS-IMAGENS.md`. Não publique retratos de licença duvidosa.
+
+### Código
+
+Todo bloco ```` ```python ```` de uma aula precisa rodar sem erro, na ordem em que aparece no arquivo. Trechos ilustrativos que dependem de arquivos ou módulos externos usam ```` ```text ````. O validador `scripts/revisar-estilo.py` não aplica as regras de hífen e exclamação dentro de blocos de código e trechos em crase, porque ali vale a sintaxe da linguagem.
+
+### Citações
+
+Citações de fontes primárias trazem a obra e, quando a tradução for do curso, a indicação "tradução livre". Uma citação literal que contenha exclamação pode ser mantida com o marcador `<!-- estilo: ok -->` no fim da linha.

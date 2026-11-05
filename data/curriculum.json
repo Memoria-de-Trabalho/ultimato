@@ -3,10 +3,10 @@
     "id": "o-ultimo-curso",
     "title": "O Último Curso",
     "subtitle": "Formação Livre, Aberta e Radicalmente Interdisciplinar em Engenharia de Software, Letramento Digital, Filosofia Política e Ciências Sociais Computacionais",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "language": "pt-BR",
     "totalHours": 1320,
-    "lastUpdated": "2026-11-04",
+    "lastUpdated": "2026-11-05",
     "repository": "https://github.com/Memoria-de-Trabalho/ultimato",
     "hosting": {
       "portfolioGatewayUrl": "https://lucasrafaldini.github.io/o-ultimo-curso/",

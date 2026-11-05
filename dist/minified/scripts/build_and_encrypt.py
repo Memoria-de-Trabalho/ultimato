@@ -28,16 +28,34 @@ EMOJI_RE = re.compile(
     "]+",
     flags=re.UNICODE,
 )
-def sanitize_style(text: str, is_json: bool = False) -> str:
-    """Remove emojis e substitui travessões e meia-riscas conforme o guia de estilo do Memória de Trabalho."""
+def _sanitize_prose(text: str) -> str:
     text = EMOJI_RE.sub("", text)
     text = re.sub(r"(\d)\s*[\u2014\u2013]\s*(\d)", r"\1 a \2", text)
     text = re.sub(r"\s+[\u2014\u2013]\s+", ": ", text)
     text = re.sub(r"[\u2014\u2013]", ": ", text)
-    if not is_json:
-        text = re.sub(r"^(#+)\s+", r"\1 ", text, flags=re.M)
-        text = re.sub(r":\s*:", ":", text)
     return text
+def sanitize_style(text: str, is_json: bool = False) -> str:
+    """Remove emojis e substitui travessões e meia-riscas conforme o guia de estilo do Memória de Trabalho.
+    Em Markdown, blocos de código (entre crases triplas) são preservados intactos: lá valem a sintaxe
+    da linguagem e endereços como `2001:db8::1`, que a limpeza de prosa estragaria.
+    """
+    if is_json:
+        return _sanitize_prose(text)
+    saida = []
+    em_codigo = False
+    for linha in text.split("\n"):
+        if linha.lstrip().startswith("```"):
+            em_codigo = not em_codigo
+            saida.append(linha)
+            continue
+        if em_codigo:
+            saida.append(EMOJI_RE.sub("", linha))
+            continue
+        limpa = _sanitize_prose(linha)
+        limpa = re.sub(r"^(#+)\s+", r"\1 ", limpa)
+        limpa = re.sub(r":\s+:", ":", limpa)
+        saida.append(limpa)
+    return "\n".join(saida)
 def sanitize_repository_files() -> None:
     """Garante que todos os arquivos-fonte do repositório sigam o guia de estilo sem emojis e sem travessão."""
     skip_dirs = {".git", "dist", "viewer", "scripts", "__pycache__", ".venv"}

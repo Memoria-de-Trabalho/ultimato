@@ -8,6 +8,29 @@ Formação livre, aberta e estruturada em Engenharia de Software, Letramento Dig
 
 > **Aviso de Idioma:** Este currículo e todos os seus recursos de apoio foram estruturados exclusivamente em **Português (PT-BR)**.
 
+## Como este curso funciona
+
+Cada um dos 20 módulos tem um **guia** (objetivos, mapa de conceitos, linha do tempo, leituras e projeto avaliativo) e uma sequência de **aulas** escritas para estudo autônomo. As aulas seguem sempre o mesmo roteiro: o que você vai aprender, uma pergunta de abertura, a exposição em seções curtas, a leitura guiada da fonte primária, exercícios com gabarito comentado e um resumo.
+
+- **Tooltips de jargão:** termos técnicos aparecem sublinhados; passe o mouse ou toque para ver a definição. As definições completas estão no [Glossário](./docs/GLOSSARIO.md).
+- **Diagramas:** conceitos complexos (a dialética do senhor e do escravo, a mais-valia, o aperto de mão do TLS, a busca binária) ganham diagramas em Mermaid.
+- **Imagens históricas:** fotografias, gravuras e documentos em domínio público ou licença livre, da Wikimedia Commons, com [créditos completos](./docs/CREDITOS-IMAGENS.md).
+- **Código testado:** todos os trechos de Python das aulas foram executados antes da publicação.
+
+Comece por [Como estudar neste curso](./docs/COMO-ESTUDAR.md) e pela [Linha do tempo do curso](./docs/LINHA-DO-TEMPO.md).
+
+![Platão e Aristóteles no afresco A Escola de Atenas, de Rafael](https://commons.wikimedia.org/wiki/Special:FilePath/Sanzio_01_Plato_Aristotle.jpg?width=500)
+
+*Platão e Aristóteles em* A Escola de Atenas*, de Rafael (1509 a 1511). Domínio público. O curso começa por eles (MOD-101) e termina num software de interesse público (MOD-306).*
+
+### Estado atual do conteúdo
+
+| Ciclo | Módulos | Aulas escritas | Situação |
+| :--- | :---: | :---: | :--- |
+| Ciclo 1: Fundamentos | 7 | 46 | Guias e aulas completos, com tooltips, diagramas, imagens, exercícios e código testado |
+| Ciclo 2: Teoria Revolucionária, Teoria Crítica, Brasil e Engenharia de Software | 7 | 0 | Ementas publicadas; aulas em produção |
+| Ciclo 3: Ciências Sociais Computacionais | 6 | 0 | Ementas publicadas; aulas em produção |
+
 ## Propósito
 
 Em *A Rebelião das Massas*, José Ortega y Gasset descreveu uma figura típica da modernidade técnica: o especialista que domina um fragmento minúsculo de cálculo ou código e se comporta como ignorante em tudo o que diz respeito à história, à política e à sociedade. Na mesma década de 1930, em *O Autor como Produtor*, Walter Benjamin mostrou que boas intenções políticas servem de pouco quando o trabalhador intelectual continua abastecendo sem questionar um aparelho produtivo alheio. Para Benjamin, a tarefa passa por refuncionalizar a própria técnica, mudando a posição de quem produz dentro das relações de produção.
